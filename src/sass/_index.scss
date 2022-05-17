@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1440px;
+  margin: auto;
+  //   header {
+  //   }
+
+  //   main {
+  //   }
+
+  footer {
+    .section__contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $white;
+      background-image: url("../img/Oval.png");
+      background-repeat: no-repeat;
+      width: 1111px;
+      height: 292px;
+      margin-left: 165px;
+      margin-right: 164px;
+      margin-bottom: -150px;
+
+      //   h1 {
+      //   }
+    }
+    .nav__background {
+      background-color: $black;
+      height: 393px;
+      .footer__nav {
+        div {
+          display: flex;
+          justify-content: space-between;
+          ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 42px;
+            li {
+              a {
+                text-decoration: none;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
