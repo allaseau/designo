@@ -1,1 +1,17 @@
-/*# sourceMappingURL=style.css.map */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 65px;
+  margin-left: 165px;
+  margin-right: 164px;
+}
+header nav li {
+  display: inline;
+}
+header nav li a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+    margin-left: 165px;
+    margin-right: 164px;
+    
+    nav{
+        li{
+            display: inline;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
