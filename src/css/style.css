@@ -8,6 +8,7 @@ header {
   margin-top: 65px;
   margin-left: 165px;
   margin-right: 122px;
+  margin-bottom: 65px;
 }
 header img {
   max-width: 152.32px;
@@ -21,6 +22,13 @@ header nav li {
 header nav li a {
   padding-right: 42px;
   text-decoration: none;
+  color: rgb(29, 28, 30);
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
 }
 
 * {
@@ -36,13 +44,12 @@ body footer .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: rgb(255, 255, 255);
   background-image: url("../img/Oval.png");
   background-repeat: no-repeat;
@@ -50,7 +57,47 @@ body footer .section__contact {
   height: 292px;
   margin-left: 165px;
   margin-right: 164px;
-  margin-bottom: -150px;
+}
+body footer .section__contact div {
+  margin-left: 95px;
+}
+body footer .section__contact div h1 {
+  max-width: 268px;
+  max-height: 98px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+}
+body footer .section__contact div p {
+  max-width: 459px;
+  max-height: 78px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 46px;
+}
+body footer .section__contact a {
+  max-width: 152px;
+  max-height: 56px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  border-radius: 8px;
+  margin-right: 96px;
+  text-decoration: none;
+  color: rgb(29, 28, 30);
+}
+body footer .section__contact a:link, body footer .section__contact a:visited {
+  padding: 17px 19px 17px 18px;
+  background-color: rgb(255, 255, 255);
 }
 body footer .nav__background {
   background-color: rgb(29, 28, 30);
