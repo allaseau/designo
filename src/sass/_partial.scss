@@ -27,4 +27,11 @@ $fontJ: "Jost", sans-serif;
             @extend .values__passion;
         }
     }
-}
+    .valuesresourceful {
+      @extend .valuespassion;
+    }
+    .valuesfriendly {
+      @extend .valuespassion;
+    }
+  }
+
