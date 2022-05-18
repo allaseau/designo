@@ -3,16 +3,16 @@
   padding: 0;
 }
 body {
+  font-family: "Jost";
   max-width: 1440px;
   max-height: 2940px;
   margin: auto;
   header {
     display: flex;
     justify-content: space-between;
-    margin-top: 65px;
-    margin-left: 165px;
-    margin-right: 122px;
-    margin-bottom: 65px;
+    width: 1111px;
+    margin: 65px auto; 
+
     img {
       max-width: 197px;
       max-height: 27px;
@@ -26,7 +26,7 @@ body {
           padding-right: 42px;
           text-decoration: none;
           color: $black;
-          font-family: "Jost";
+          
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -56,7 +56,7 @@ body {
             top: 0;
             left: 0;
             h1 {
-              @include projects;
+              @include projectsH;
             }
           }
         }
@@ -70,7 +70,7 @@ body {
             top: 0;
             left: 0;
             h1 {
-              @include projects;
+              @include projectsH;
             }
           }
         }
@@ -84,7 +84,7 @@ body {
             top: 0;
             left: 0;
             h1 {
-              @include projects;
+              @include projectsH;
             }
           }
         }

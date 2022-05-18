@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Home page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="webdesign" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -12,30 +12,39 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../src/css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Web Design</title>
   </head>
   <body>
     <header>
       <img
-        src="./src/img/Group 13.png"
+        src="../src/img/Group 13.png"
         alt="Logo Designo"
         class="header__nav__img"
       />
       <nav>
         <ul class="header__nav__order">
-          <li><a href="">Our company</a></li>
-          <li><a href="./mariya/locations.html">Locations</a></li>
-          <li><a href="./mariya/contact.html">Contact</a></li>
+          <li><a href="">OUR COMPANY</a></li>
+          <li><a href="./mariya/locations.html">LOCATIONS</a></li>
+          <li><a href="./mariya/contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="section__solutions">
+        <div>
         <h2>Web Design</h2>
         <p>
-          We build websites that serve as powerful marketing tools and bring
+          We build websites that serve as powerful marketing tools <br/> and bring
           memorable brand experiences.
         </p>
+      </div>
       </section>
 
       <section class="section__tech">
@@ -100,48 +109,61 @@
 
     <footer>
       <section class="section__contact">
-        <h1>Let's talk about your project</h1>
-        <p>
-          Ready to take it to the next level? Contact us today and find out how
-          our expertise can help your business grow.
-        </p>
+        <div>
+          <h1>Let's talk about your project</h1>
+          <p>
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+        </div>
         <a href="">GET IN TOUCH</a>
       </section>
-      <section class="footer__nav">
-        <div>
-          <img
-            src="./src/img/Group 13-1.png"
-            alt="Logo Designo"
-            class="footer__nav__img"
-          />
-          <nav>
-            <ul class="footer__nav__order">
-              <li><a href="">Our compagnie</a></li>
-              <li><a href="./mariya/locations.html">Locations</a></li>
-              <li><a href="./mariya/contact.html">Contact</a></li>
+      <div class="lower__container">
+        <section class="footer__nav">
+          <div>
+            <img
+              src="../src/img/Group 13-1.png"
+              alt="Logo Designo"
+              class="footer__nav__img"
+            />
+            <nav>
+              <ul class="footer__nav__order">
+                <li><a href="">Our company</a></li>
+                <li><a href="./mariya/locations.html">Locations</a></li>
+                <li><a href="./mariya/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <hr />
+        <div class="inline__lower__container">
+          <section class="section__info">
+            <div class="info__address">
+              <h3>Designo Central Office</h3>
+              <p>
+                386 Wellington Street <br />
+                1000 Brussels - Belgium
+              </p>
+            </div>
+            <div class="info__contact">
+              <h3>Contact Us (Central Office)</h3>
+              <p>
+                P : +1 253-863-8967 <br />
+                M : contact@designo.co
+              </p>
+            </div>
+          </section>
+          <section class="section__media">
+            <ul class="media__order">
+              <li><i class="fa-brands fa-facebook-square"></i></li>
+              <li><i class="fa-brands fa-youtube-square"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-pinterest"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
             </ul>
-          </nav>
+          </section>
         </div>
-      </section>
-      <section class="section__info">
-        <div class="info__address">
-          <h3>Designo Central Office</h3>
-          <p>386 Wellington Street1000 Brussels - Belgium</p>
-        </div>
-        <div class="info__contact">
-          <h3>Contact Us (Central Office)</h3>
-          <p>P : +1 253-863-8967 M : contact@designo.co Belgium</p>
-        </div>
-      </section>
-      <section class="section__media">
-        <ul class="media__order">
-          <li><i class="fa-brands fa-facebook-square"></i></li>
-          <li><i class="fa-brands fa-youtube-square"></i></li>
-          <li><i class="fa-brands fa-twitter"></i></li>
-          <li><i class="fa-brands fa-pinterest"></i></li>
-          <li><i class="fa-brands fa-instagram"></i></li>
-        </ul>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
