@@ -1,0 +1,50 @@
+body{
+    width: 1440px;
+        .section__aboutUs{
+        display: flex;
+        margin: auto;
+        div{
+            height: 480px;
+            background-color: red;
+            color: white;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    }
+    .section__skills{
+        display: flex;
+        margin-top: 20px;
+        div{
+            height: 480px;
+            background-color: red;
+            color: white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            .section__skills__img{
+                height: 480px;
+            }
+        }
+    }
+    .section__location{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section__solutions{
+        display: flex;
+        margin: auto;
+        div{
+            height: 480px;
+            background-color: red;
+            color: white;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-bottom: 20px;
+            .solutions__img{
+                height: 480px;
+            }
+        }
+    }
+}
