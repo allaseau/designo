@@ -19,19 +19,23 @@ body {
       align-self: center;
     }
     nav {
-      li {
-        display: inline-block;
-
-        a {
-          padding-right: 42px;
-          text-decoration: none;
-          color: $black;
-          
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 14px;
-          letter-spacing: 2px;
+      ul{
+        display: flex;
+        gap:42px;
+        li {
+          display: inline-block;
+  
+          a {
+        
+            text-decoration: none;
+            color: $black;
+            
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 2px;
+          }
         }
       }
     }
