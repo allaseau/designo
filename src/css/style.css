@@ -57,14 +57,33 @@ body main .section__values {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 160px;
+  font-family: "Jost", sans-serif;
+  color: rgb(51, 49, 54);
 }
 body main .section__values .values__passion, body main .section__values .values__friendly, body main .section__values .values__resourceful {
   font-size: small;
   text-align: center;
-  width: 30%;
+}
+body main .section__values .values__passion img, body main .section__values .values__friendly img, body main .section__values .values__resourceful img {
+  margin-bottom: 48px;
 }
 body main .section__values .values__passion h2, body main .section__values .values__friendly h2, body main .section__values .values__resourceful h2 {
   margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  text-align: center;
+  width: 350px;
+  height: 26px;
+}
+body main .section__values .values__passion p, body main .section__values .values__friendly p, body main .section__values .values__resourceful p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  width: 350px;
+  height: 104px;
 }
 body footer {
   position: relative;
@@ -169,6 +188,7 @@ body footer .lower__container .footer__nav div ul li a {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-family: "Jost", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;

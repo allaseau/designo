@@ -45,12 +45,31 @@ body {
       align-items: center;
       justify-content: space-between;
       margin-bottom: 160px;
+      font-family: $fontJ;
+      color: $grey;
       .values__passion {
         font-size: small;
         text-align: center;
-        width: 30%;
+        img {
+          margin-bottom: 48px;
+        }
         h2 {
           margin-bottom: 32px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 26px;
+          letter-spacing: 5px;
+          text-align: center;
+          width: 350px;
+          height: 26px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          text-align: center;
+          width: 350px;
+          height: 104px;
         }
       }
       .values__resourceful {
@@ -153,6 +172,7 @@ body {
                 color: $white;
                 text-transform: uppercase;
                 font-family: $fontJ;
+                font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 14px;
