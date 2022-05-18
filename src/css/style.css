@@ -7,6 +7,10 @@ body {
   max-width: 1440px;
   margin: auto;
 }
+body footer {
+  position: relative;
+  z-index: auto;
+}
 body footer .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,11 +29,14 @@ body footer .section__contact {
   height: 292px;
   margin-left: 165px;
   margin-right: 164px;
-  margin-bottom: -150px;
+  margin-bottom: -170px;
+  position: relative;
+  z-index: 1;
 }
 body footer .nav__background {
   background-color: rgb(29, 28, 30);
   height: 393px;
+  padding-top: 144px;
 }
 body footer .nav__background .footer__nav div {
   display: -webkit-box;
@@ -38,6 +45,12 @@ body footer .nav__background .footer__nav div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+body footer .nav__background .footer__nav div .footer__nav__img {
+  height: 27px;
+  width: 197px;
+  margin-left: 165px;
+  margin-top: 144px;
 }
 body footer .nav__background .footer__nav div ul {
   list-style: none;
@@ -48,8 +61,70 @@ body footer .nav__background .footer__nav div ul {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   gap: 42px;
+  margin-right: 166px;
+  margin-top: 151px;
+  margin-bottom: 40px;
 }
 body footer .nav__background .footer__nav div ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+}
+body footer .nav__background hr {
+  width: 1111px;
+  margin: auto;
+  opacity: 0.1;
+}
+body footer .nav__background .section__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 165px;
+  margin-top: 31px;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+body footer .nav__background .section__info .info__address {
+  padding-right: 30px;
+  width: 350px;
+  height: 78px;
+  margin-bottom: 72px;
+}
+body footer .nav__background .section__info .info__address h3 {
+  font-weight: 700;
+}
+body footer .nav__background .section__info .info__address p {
+  font-weight: 400;
+}
+body footer .nav__background .section__info .section__contact {
+  width: 350px;
+  height: 78px;
+}
+body footer .nav__background .section__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+body footer .nav__background .section__media ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  color: rgb(231, 129, 107);
+  width: 136px;
+  height: 24px;
+  margin-right: 164px;
+  margin-bottom: 72px;
 }/*# sourceMappingURL=style.css.map */

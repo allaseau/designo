@@ -12,6 +12,8 @@ body {
   //   }
 
   footer {
+    position: relative;
+    z-index: auto;
     .section__contact {
       display: flex;
       flex-direction: column;
@@ -23,7 +25,9 @@ body {
       height: 292px;
       margin-left: 165px;
       margin-right: 164px;
-      margin-bottom: -150px;
+      margin-bottom: -170px;
+      position: relative;
+      z-index: 1;
 
       //   h1 {
       //   }
@@ -31,22 +35,81 @@ body {
     .nav__background {
       background-color: $black;
       height: 393px;
+      padding-top: 144px;
       .footer__nav {
         div {
           display: flex;
           justify-content: space-between;
+          .footer__nav__img {
+            height: 27px;
+            width: 197px;
+            margin-left: 165px;
+            margin-top: 144px;
+          }
           ul {
             list-style: none;
             display: flex;
             justify-content: space-evenly;
             gap: 42px;
+            margin-right: 166px;
+            margin-top: 151px;
+            margin-bottom: 40px;
             li {
               a {
                 text-decoration: none;
                 color: $white;
+                text-transform: uppercase;
+                font-family: $fontJ;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: 2px;
               }
             }
           }
+        }
+      }
+      hr {
+        width: 1111px;
+        margin: auto;
+        opacity: 0.1;
+      }
+      .section__info {
+        display: flex;
+        margin-left: 165px;
+        margin-top: 31px;
+        color: $white;
+        opacity: 0.5;
+        font-family: $fontJ;
+        font-size: 16px;
+        line-height: 26px;
+        .info__address {
+          padding-right: 30px;
+          @include info;
+          margin-bottom: 72px;
+          h3 {
+            font-weight: 700;
+          }
+          p {
+            font-weight: 400;
+          }
+        }
+        .section__contact {
+          @include info;
+        }
+      }
+      .section__media {
+        display: flex;
+        justify-content: right;
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 16px;
+          color: $pink;
+          width: 136px;
+          height: 24px;
+          margin-right: 164px;
+          margin-bottom: 72px;
         }
       }
     }
