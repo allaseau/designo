@@ -1,3 +1,36 @@
+//   header {
+//   }
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+    margin-left: 165px;
+    margin-right: 122px;
+    margin-bottom: 65px;
+    img{
+        max-width:152.32px;
+        max-height:20.54px;
+        align-self: center;
+    }
+    nav{
+        li{
+            display: inline-block;
+            
+            a{
+                padding-right: 42px;
+                text-decoration: none;
+                color:$black;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: 2px;
+                
+            }
+        }
+    }
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +38,6 @@
 body {
   max-width: 1440px;
   margin: auto;
-  //   header {
-  //   }
 
   //   main {
   //   }
@@ -16,8 +47,8 @@ body {
     z-index: auto;
     .section__contact {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
       color: $white;
       background-image: url("../img/Oval.png");
       background-repeat: no-repeat;
@@ -29,6 +60,49 @@ body {
       position: relative;
       z-index: 1;
 
+      // margin-bottom: -150px; 
+      div{
+        margin-left: 95px;
+        
+        h1{
+          max-width: 268px;
+          max-height: 98px;
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 40px;
+        }
+        p{
+          max-width: 459px;
+          max-height: 78px;
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          margin-bottom: 46px;
+        }
+      }
+      a{
+        max-width: 152px;
+        max-height: 56px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        border-radius: 8px;
+        margin-right: 96px;
+        text-decoration: none;
+        color: $black;
+      }     
+      a:link, a:visited{
+        padding: 17px 19px 17px 18px;
+        background-color: $white;
+      }
       //   h1 {
       //   }
     }
