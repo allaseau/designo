@@ -8,3 +8,23 @@ $fontJ: "Jost", sans-serif;
   width: 350px;
   height: 78px;
 }
+@mixin locations{
+    .sectionvalues{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .valuespassion{
+            font-size: small;
+            text-align: center;
+            width: 30%;
+        }
+        .valuesresourceful{
+            @extend .valuespassion;
+        }
+        .valuesfriendly{
+            @extend .valuespassion;
+        }
+    }
+}
