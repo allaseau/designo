@@ -38,15 +38,70 @@ body {
   }
 
   main {
+    .section__projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "a b"
+        "a c";
+      gap: 24px 30px;
+      margin: 0 auto 160px;
+      width: 1082px;
+      .projects__web {
+        grid-area: a;
+        .projects__web__img {
+          position: relative;
+          .projects__web__text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            h1 {
+              @include projects;
+            }
+          }
+        }
+      }
+      .projects__app {
+        grid-area: b;
+        .projects__app__img {
+          position: relative;
+          .projects__app__text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            h1 {
+              @include projects;
+            }
+          }
+        }
+      }
+      .projects__graphic {
+        grid-area: c;
+        .projects__graphic__img {
+          position: relative;
+          .projects__graphic__text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            h1 {
+              @include projects;
+            }
+          }
+        }
+      }
+    }
+
     .section__values {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 160px;
+      margin: 0 auto 160px;
       font-family: $fontJ;
       color: $grey;
+      width: 1110px;
+
       .values__passion {
         font-size: small;
         text-align: center;
@@ -94,9 +149,7 @@ body {
       background-repeat: no-repeat;
       width: 1111px;
       height: 292px;
-      margin-left: 165px;
-      margin-right: 164px;
-      margin-bottom: -101px;
+      margin: 0 auto -101px;
       position: relative;
       z-index: 1;
 

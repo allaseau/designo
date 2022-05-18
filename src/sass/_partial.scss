@@ -9,6 +9,17 @@ $fontJ: "Jost", sans-serif;
   width: 350px;
   height: 78px;
 }
+
+@mixin projectsH {
+  font-family: $fontJ;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: $white;
+}
+
 @mixin locations {
   .section__values {
     display: flex;
