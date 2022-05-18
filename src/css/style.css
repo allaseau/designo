@@ -4,6 +4,7 @@
 }
 
 body {
+  font-family: "Jost";
   max-width: 1440px;
   max-height: 2940px;
   margin: auto;
@@ -15,10 +16,8 @@ body header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 65px;
-  margin-left: 165px;
-  margin-right: 122px;
-  margin-bottom: 65px;
+  width: 1111px;
+  margin: 65px auto;
 }
 body header img {
   max-width: 197px;
@@ -33,7 +32,6 @@ body header nav li a {
   padding-right: 42px;
   text-decoration: none;
   color: rgb(29, 28, 30);
-  font-family: "Jost";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -82,8 +80,8 @@ body footer .section__contact {
   background-repeat: no-repeat;
   width: 1111px;
   height: 292px;
-  margin-left: 165px;
-  margin-right: 164px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: -101px;
   position: relative;
   z-index: 1;
@@ -238,8 +236,8 @@ body footer .lower__container .inline__lower__container .section__media ul li i 
   height: 252px;
   background-image: url("../img/Oval.png");
   background-repeat: no-repeat;
-  margin-left: 165px;
-  margin-right: 164px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
