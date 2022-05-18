@@ -373,9 +373,6 @@ body footer .lower__container .inline__lower__container .section__media ul li i 
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 30px;
   margin: 0 auto 192px;
   width: 1110px;
