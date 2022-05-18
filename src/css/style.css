@@ -40,6 +40,28 @@ body header nav li a {
   line-height: 14px;
   letter-spacing: 2px;
 }
+body main .section__values .section__values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .section__values .section__values .values__passion, body main .section__values .section__values .values__friendly, body main .section__values .section__values .values__resourceful {
+  font-size: small;
+  text-align: center;
+  width: 30%;
+}
 body footer {
   position: relative;
   z-index: auto;
@@ -62,7 +84,7 @@ body footer .section__contact {
   height: 292px;
   margin-left: 165px;
   margin-right: 164px;
-  margin-bottom: -170px;
+  margin-bottom: -101px;
   position: relative;
   z-index: 1;
 }
@@ -110,7 +132,6 @@ body footer .section__contact a:visited {
 }
 body footer .lower__container {
   background-color: rgb(29, 28, 30);
-  padding-top: 144px;
 }
 body footer .lower__container .footer__nav div {
   display: -webkit-box;
@@ -208,6 +229,5 @@ body footer .lower__container .inline__lower__container .section__media ul {
   color: rgb(231, 129, 107);
 }
 body footer .lower__container .inline__lower__container .section__media ul li i {
-  height: 24px;
-  width: 24px;
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */

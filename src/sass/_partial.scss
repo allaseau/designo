@@ -8,30 +8,29 @@ $fontJ: "Jost", sans-serif;
   width: 350px;
   height: 78px;
 }
-@mixin locations{
-    .section__values{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        .values__passion{
-            font-size: small;
-            text-align: center;
-            width: 30%;
-        }
-        .values__resourceful{
-            @extend .values__passion;
-        }
-        .values__friendly{
-            @extend .values__passion;
-        }
+@mixin locations {
+  .section__values {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .values__passion {
+      font-size: small;
+      text-align: center;
+      width: 30%;
     }
-    .valuesresourceful {
-      @extend .valuespassion;
+    .values__resourceful {
+      @extend .values__passion;
     }
-    .valuesfriendly {
-      @extend .valuespassion;
+    .values__friendly {
+      @extend .values__passion;
     }
   }
-
+  .values__resourceful {
+    @extend .values__passion;
+  }
+  .values__friendly {
+    @extend .values__passion;
+  }
+}

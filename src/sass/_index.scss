@@ -36,8 +36,11 @@ body {
       }
     }
   }
-  //   main {
-  //   }
+  main {
+    .section__values {
+      @include locations;
+    }
+  }
 
   footer {
     position: relative;
@@ -54,7 +57,7 @@ body {
       height: 292px;
       margin-left: 165px;
       margin-right: 164px;
-      margin-bottom: -170px;
+      margin-bottom: -101px;
       position: relative;
       z-index: 1;
 
@@ -106,7 +109,6 @@ body {
     }
     .lower__container {
       background-color: $black;
-      padding-top: 144px;
       .footer__nav {
         div {
           display: flex;
@@ -185,8 +187,7 @@ body {
             color: $pink;
             li {
               i {
-                height: 24px;
-                width: 24px;
+                font-size: 24px;
               }
             }
           }
