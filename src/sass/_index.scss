@@ -36,9 +36,29 @@ body {
       }
     }
   }
+
   main {
     .section__values {
-      @include locations;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 160px;
+      .values__passion {
+        font-size: small;
+        text-align: center;
+        width: 30%;
+        h2 {
+          margin-bottom: 32px;
+        }
+      }
+      .values__resourceful {
+        @extend .values__passion;
+      }
+      .values__friendly {
+        @extend .values__passion;
+      }
     }
   }
 

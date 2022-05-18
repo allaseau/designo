@@ -40,7 +40,7 @@ body header nav li a {
   line-height: 14px;
   letter-spacing: 2px;
 }
-body main .section__values .section__values {
+body main .section__values {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,11 +56,15 @@ body main .section__values .section__values {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 160px;
 }
-body main .section__values .section__values .values__passion, body main .section__values .section__values .values__friendly, body main .section__values .section__values .values__resourceful {
+body main .section__values .values__passion, body main .section__values .values__friendly, body main .section__values .values__resourceful {
   font-size: small;
   text-align: center;
   width: 30%;
+}
+body main .section__values .values__passion h2, body main .section__values .values__friendly h2, body main .section__values .values__resourceful h2 {
+  margin-bottom: 32px;
 }
 body footer {
   position: relative;
