@@ -1,4 +1,14 @@
-header {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  max-height: 2940px;
+  margin: auto;
+}
+body header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,16 +20,16 @@ header {
   margin-right: 122px;
   margin-bottom: 65px;
 }
-header img {
-  max-width: 152.32px;
-  max-height: 20.54px;
+body header img {
+  max-width: 197px;
+  max-height: 27px;
   -ms-flex-item-align: center;
       align-self: center;
 }
-header nav li {
+body header nav li {
   display: inline-block;
 }
-header nav li a {
+body header nav li a {
   padding-right: 42px;
   text-decoration: none;
   color: rgb(29, 28, 30);
@@ -30,19 +40,10 @@ header nav li a {
   line-height: 14px;
   letter-spacing: 2px;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  max-width: 1440px;
-  margin: auto;
-}
 body footer {
   position: relative;
   z-index: auto;
+  height: 393px;
 }
 body footer .section__contact {
   display: -webkit-box;
@@ -102,16 +103,16 @@ body footer .section__contact a {
   text-decoration: none;
   color: rgb(29, 28, 30);
 }
-body footer .section__contact a:link, body footer .section__contact a:visited {
+body footer .section__contact a:link,
+body footer .section__contact a:visited {
   padding: 17px 19px 17px 18px;
   background-color: rgb(255, 255, 255);
 }
-body footer .nav__background {
+body footer .lower__container {
   background-color: rgb(29, 28, 30);
-  height: 393px;
   padding-top: 144px;
 }
-body footer .nav__background .footer__nav div {
+body footer .lower__container .footer__nav div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,13 +120,13 @@ body footer .nav__background .footer__nav div {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body footer .nav__background .footer__nav div .footer__nav__img {
+body footer .lower__container .footer__nav div .footer__nav__img {
   height: 27px;
   width: 197px;
   margin-left: 165px;
   margin-top: 144px;
 }
-body footer .nav__background .footer__nav div ul {
+body footer .lower__container .footer__nav div ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,7 +139,7 @@ body footer .nav__background .footer__nav div ul {
   margin-top: 151px;
   margin-bottom: 40px;
 }
-body footer .nav__background .footer__nav div ul li a {
+body footer .lower__container .footer__nav div ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -148,12 +149,24 @@ body footer .nav__background .footer__nav div ul li a {
   line-height: 14px;
   letter-spacing: 2px;
 }
-body footer .nav__background hr {
+body footer .lower__container hr {
   width: 1111px;
   margin: auto;
   opacity: 0.1;
 }
-body footer .nav__background .section__info {
+body footer .lower__container .inline__lower__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0;
+}
+body footer .lower__container .inline__lower__container .section__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,39 +178,36 @@ body footer .nav__background .section__info {
   font-size: 16px;
   line-height: 26px;
 }
-body footer .nav__background .section__info .info__address {
+body footer .lower__container .inline__lower__container .section__info .info__address {
   padding-right: 30px;
   width: 350px;
   height: 78px;
   margin-bottom: 72px;
 }
-body footer .nav__background .section__info .info__address h3 {
+body footer .lower__container .inline__lower__container .section__info .info__address h3 {
   font-weight: 700;
 }
-body footer .nav__background .section__info .info__address p {
+body footer .lower__container .inline__lower__container .section__info .info__address p {
   font-weight: 400;
 }
-body footer .nav__background .section__info .section__contact {
+body footer .lower__container .inline__lower__container .section__info .section__contact {
   width: 350px;
   height: 78px;
 }
-body footer .nav__background .section__media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+body footer .lower__container .inline__lower__container .section__media {
+  margin-top: 85px;
+  margin-right: 164px;
+  margin-bottom: 72px;
 }
-body footer .nav__background .section__media ul {
+body footer .lower__container .inline__lower__container .section__media ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
   color: rgb(231, 129, 107);
-  width: 136px;
+}
+body footer .lower__container .inline__lower__container .section__media ul li i {
   height: 24px;
-  margin-right: 164px;
-  margin-bottom: 72px;
+  width: 24px;
 }/*# sourceMappingURL=style.css.map */
