@@ -3,13 +3,20 @@ header{
     justify-content: space-between;
     margin-top: 65px;
     margin-left: 165px;
-    margin-right: 164px;
-    
+    margin-right: 122px;
+    img{
+        max-width:152.32px;
+        max-height:20.54px;
+        align-self: center;
+    }
     nav{
         li{
-            display: inline;
+            display: inline-block;
+            
             a{
+                padding-right: 42px;
                 text-decoration: none;
+                
             }
         }
     }

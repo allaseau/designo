@@ -7,11 +7,18 @@ header {
           justify-content: space-between;
   margin-top: 65px;
   margin-left: 165px;
-  margin-right: 164px;
+  margin-right: 122px;
+}
+header img {
+  max-width: 152.32px;
+  max-height: 20.54px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 header nav li {
-  display: inline;
+  display: inline-block;
 }
 header nav li a {
+  padding-right: 42px;
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
