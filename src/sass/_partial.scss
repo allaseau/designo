@@ -9,22 +9,22 @@ $fontJ: "Jost", sans-serif;
   height: 78px;
 }
 @mixin locations{
-    .sectionvalues{
+    .section__values{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        .valuespassion{
+        .values__passion{
             font-size: small;
             text-align: center;
             width: 30%;
         }
-        .valuesresourceful{
-            @extend .valuespassion;
+        .values__resourceful{
+            @extend .values__passion;
         }
-        .valuesfriendly{
-            @extend .valuespassion;
+        .values__friendly{
+            @extend .values__passion;
         }
     }
 }
