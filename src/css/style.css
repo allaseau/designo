@@ -54,8 +54,20 @@ body main .section__projects .projects__web .projects__web__img {
 }
 body main .section__projects .projects__web .projects__web__img .projects__web__text {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body main .section__projects .projects__web .projects__web__img .projects__web__text h1 {
   font-family: "Jost", sans-serif;
@@ -65,19 +77,44 @@ body main .section__projects .projects__web .projects__web__img .projects__web__
   line-height: 48px;
   letter-spacing: 2px;
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 24px;
 }
-body main .section__projects .projects__app {
+body main .section__projects .projects__web .projects__web__img .projects__web__text a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+body main .projects__app {
   grid-area: b;
 }
-body main .section__projects .projects__app .projects__app__img {
+body main .projects__app .projects__app__img {
   position: relative;
 }
-body main .section__projects .projects__app .projects__app__img .projects__app__text {
+body main .projects__app .projects__app__img .projects__app__text {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-body main .section__projects .projects__app .projects__app__img .projects__app__text h1 {
+body main .projects__app .projects__app__img .projects__app__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -85,19 +122,44 @@ body main .section__projects .projects__app .projects__app__img .projects__app__
   line-height: 48px;
   letter-spacing: 2px;
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 24px;
 }
-body main .section__projects .projects__graphic {
+body main .projects__app .projects__app__img .projects__app__text a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+body main .projects__graphic {
   grid-area: c;
 }
-body main .section__projects .projects__graphic .projects__graphic__img {
+body main .projects__graphic .projects__graphic__img {
   position: relative;
 }
-body main .section__projects .projects__graphic .projects__graphic__img .projects__graphic__text {
+body main .projects__graphic .projects__graphic__img .projects__graphic__text {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-body main .section__projects .projects__graphic .projects__graphic__img .projects__graphic__text h1 {
+body main .projects__graphic .projects__graphic__img .projects__graphic__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -105,8 +167,22 @@ body main .section__projects .projects__graphic .projects__graphic__img .project
   line-height: 48px;
   letter-spacing: 2px;
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 24px;
 }
-body main .section__values {
+body main .projects__graphic .projects__graphic__img .projects__graphic__text a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.section__values {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,14 +203,14 @@ body main .section__values {
   color: rgb(51, 49, 54);
   width: 1110px;
 }
-body main .section__values .values__passion, body main .section__values .values__friendly, body main .section__values .values__resourceful {
+.section__values .values__passion, .section__values .values__friendly, .section__values .values__resourceful {
   font-size: small;
   text-align: center;
 }
-body main .section__values .values__passion img, body main .section__values .values__friendly img, body main .section__values .values__resourceful img {
+.section__values .values__passion img, .section__values .values__friendly img, .section__values .values__resourceful img {
   margin-bottom: 48px;
 }
-body main .section__values .values__passion h2, body main .section__values .values__friendly h2, body main .section__values .values__resourceful h2 {
+.section__values .values__passion h2, .section__values .values__friendly h2, .section__values .values__resourceful h2 {
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 20px;
@@ -144,7 +220,7 @@ body main .section__values .values__passion h2, body main .section__values .valu
   width: 350px;
   height: 26px;
 }
-body main .section__values .values__passion p, body main .section__values .values__friendly p, body main .section__values .values__resourceful p {
+.section__values .values__passion p, .section__values .values__friendly p, .section__values .values__resourceful p {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -152,12 +228,12 @@ body main .section__values .values__passion p, body main .section__values .value
   width: 350px;
   height: 104px;
 }
-body footer {
+footer {
   position: relative;
   z-index: auto;
   height: 393px;
 }
-body footer .section__contact {
+footer .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,10 +252,10 @@ body footer .section__contact {
   position: relative;
   z-index: 1;
 }
-body footer .section__contact div {
+footer .section__contact div {
   margin-left: 95px;
 }
-body footer .section__contact div h1 {
+footer .section__contact div h1 {
   max-width: 268px;
   max-height: 98px;
   font-family: "Jost";
@@ -188,7 +264,7 @@ body footer .section__contact div h1 {
   font-size: 40px;
   line-height: 40px;
 }
-body footer .section__contact div p {
+footer .section__contact div p {
   max-width: 459px;
   max-height: 78px;
   font-family: "Jost";
@@ -198,7 +274,7 @@ body footer .section__contact div p {
   line-height: 26px;
   margin-bottom: 46px;
 }
-body footer .section__contact a {
+footer .section__contact a {
   max-width: 152px;
   max-height: 56px;
   letter-spacing: 1px;
@@ -213,15 +289,15 @@ body footer .section__contact a {
   text-decoration: none;
   color: rgb(29, 28, 30);
 }
-body footer .section__contact a:link,
-body footer .section__contact a:visited {
+footer .section__contact a:link,
+footer .section__contact a:visited {
   padding: 17px 19px 17px 18px;
   background-color: rgb(255, 255, 255);
 }
-body footer .lower__container {
+footer .lower__container {
   background-color: rgb(29, 28, 30);
 }
-body footer .lower__container .footer__nav div {
+footer .lower__container .footer__nav div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,13 +305,13 @@ body footer .lower__container .footer__nav div {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body footer .lower__container .footer__nav div .footer__nav__img {
+footer .lower__container .footer__nav div .footer__nav__img {
   height: 27px;
   width: 197px;
   margin-left: 165px;
   margin-top: 144px;
 }
-body footer .lower__container .footer__nav div ul {
+footer .lower__container .footer__nav div ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,7 +324,7 @@ body footer .lower__container .footer__nav div ul {
   margin-top: 151px;
   margin-bottom: 40px;
 }
-body footer .lower__container .footer__nav div ul li a {
+footer .lower__container .footer__nav div ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -259,12 +335,12 @@ body footer .lower__container .footer__nav div ul li a {
   line-height: 14px;
   letter-spacing: 2px;
 }
-body footer .lower__container hr {
+footer .lower__container hr {
   width: 1111px;
   margin: auto;
   opacity: 0.1;
 }
-body footer .lower__container .inline__lower__container {
+footer .lower__container .inline__lower__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +352,7 @@ body footer .lower__container .inline__lower__container {
           align-items: flex-end;
   margin: 0;
 }
-body footer .lower__container .inline__lower__container .section__info {
+footer .lower__container .inline__lower__container .section__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,28 +364,28 @@ body footer .lower__container .inline__lower__container .section__info {
   font-size: 16px;
   line-height: 26px;
 }
-body footer .lower__container .inline__lower__container .section__info .info__address {
+footer .lower__container .inline__lower__container .section__info .info__address {
   padding-right: 30px;
   width: 350px;
   height: 78px;
   margin-bottom: 72px;
 }
-body footer .lower__container .inline__lower__container .section__info .info__address h3 {
+footer .lower__container .inline__lower__container .section__info .info__address h3 {
   font-weight: 700;
 }
-body footer .lower__container .inline__lower__container .section__info .info__address p {
+footer .lower__container .inline__lower__container .section__info .info__address p {
   font-weight: 400;
 }
-body footer .lower__container .inline__lower__container .section__info .section__contact {
+footer .lower__container .inline__lower__container .section__info .section__contact {
   width: 350px;
   height: 78px;
 }
-body footer .lower__container .inline__lower__container .section__media {
+footer .lower__container .inline__lower__container .section__media {
   margin-top: 85px;
   margin-right: 164px;
   margin-bottom: 72px;
 }
-body footer .lower__container .inline__lower__container .section__media ul {
+footer .lower__container .inline__lower__container .section__media ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,7 +393,7 @@ body footer .lower__container .inline__lower__container .section__media ul {
   gap: 16px;
   color: rgb(231, 129, 107);
 }
-body footer .lower__container .inline__lower__container .section__media ul li i {
+footer .lower__container .inline__lower__container .section__media ul li i {
   font-size: 24px;
 }
 

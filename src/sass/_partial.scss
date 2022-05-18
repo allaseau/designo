@@ -10,6 +10,12 @@ $fontJ: "Jost", sans-serif;
   height: 78px;
 }
 
+@mixin projectsT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @mixin projectsH {
   font-family: $fontJ;
   font-style: normal;
@@ -18,6 +24,19 @@ $fontJ: "Jost", sans-serif;
   line-height: 48px;
   letter-spacing: 2px;
   color: $white;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+@mixin projectsA {
+  font-family: $fontJ;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $white;
+  text-decoration: none;
 }
 
 @mixin locations {
