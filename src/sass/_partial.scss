@@ -7,6 +7,8 @@ $pinkBg: rgba(253, 243, 240, 1);
 
 $fontJ: "Jost", sans-serif;
 
+/* mixin index*/
+
 @mixin info {
   width: 350px;
   height: 78px;
@@ -60,4 +62,35 @@ $fontJ: "Jost", sans-serif;
       @extend .values__passion;
     }
   }
+}
+
+/*mixin aboutUs*/
+
+@mixin container {
+  display: flex;
+  margin: 0 auto 160px;
+  width: 1111px;
+  height: 480px;
+}
+
+@mixin h1sectionT {
+  font-family: $fontJ;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin-left: 95px;
+  margin-right: 95px;
+  margin-top: 154px;
+  margin-bottom: 24px;
+  width: 445px;
+}
+@mixin psectionT {
+  font-family: $fontJ;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 445px;
+  margin: auto;
 }
