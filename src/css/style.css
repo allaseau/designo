@@ -160,6 +160,8 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text {
           align-items: center;
 }
 body main .projects__graphic .projects__graphic__img .projects__graphic__text h1 {
+  width: 400px;
+  text-align: center;
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
