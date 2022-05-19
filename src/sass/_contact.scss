@@ -1,3 +1,38 @@
+.section__form{
+  display: flex;
+  background-color: $pink;
+  border-radius: 20px;
+  color: $white;
+  width: 1111px;
+  height: 480px;
+  align-items: center;
+  padding: 20px;
+  div{
+    h2{
+      width: 540px;
+      height: 48px;
+      padding-top: 295px;
+      padding-left: 95px;
+      padding-bottom: 32px;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 48px;
+    }
+    p{
+      width: 445px;
+      height: 104px;
+      padding-bottom: 191px;
+      padding-left: 95px;
+    }
+  } 
+  
+  button {
+    padding: 17px 47px 17px 48px;
+    background-color: $white;
+    border-radius: 8px;
+    border: none;
+  }
+}
 .footer__contact {
   height: 321px;
 }

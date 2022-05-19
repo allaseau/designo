@@ -971,6 +971,43 @@ body .section__solutions div .solutions__img {
   padding-top: 24px;
 }
 
+.section__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgb(231, 129, 107);
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  width: 1111px;
+  height: 480px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+.section__form div h2 {
+  width: 540px;
+  height: 48px;
+  padding-top: 295px;
+  padding-left: 95px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+}
+.section__form div p {
+  width: 445px;
+  height: 104px;
+  padding-bottom: 191px;
+  padding-left: 95px;
+}
+.section__form button {
+  padding: 17px 47px 17px 48px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: none;
+}
+
 .footer__contact {
   height: 321px;
 }/*# sourceMappingURL=style.css.map */
