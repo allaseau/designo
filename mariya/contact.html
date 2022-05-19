@@ -12,12 +12,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../src/css/style.min.css" />
     <title>Contact</title>
   </head>
   <body>
     <header>
       <img
-        src="./src/img/Group 13.png"
+        src="../src/img/Group 13.png"
         alt="Logo Designo"
         class="header__nav__img"
       />
@@ -62,40 +63,83 @@
       </section>
 
       <section class="section__location">
-        <article class="location__article__canada">
-          <img src="../src/img/Group 10.svg" alt="brussels tower" />
-          <h1>Belgium</h1>
-          <a href=""></a>
+        <article class="location__article__belgium">
+          <img
+            src="../src/img/Group 10.svg"
+            alt="belgium"
+            class="belgium__img"
+          />
+          <h2>Belgium</h2>
+          <a href="">SEE LOCATION</a>
         </article>
-
         <article class="location__article__australia">
-          <img src="../src/img/Group 15.svg" alt="sydney opera" />
-          <h1>Australia</h1>
-          <a href=""></a>
+          <img
+            src="../src/img/Group 15.svg"
+            alt="Australia"
+            class="australia__img"
+          />
+          <h2>AUSTRALIA</h2>
+          <a href="">SEE LOCATION</a>
         </article>
-
         <article class="location__article__uk">
-          <img src="../src/img/Group 17.svg" alt="london bridge" />
-          <h1>United Kingdom</h1>
-          <a href=""></a>
+          <img
+            src="../src/img/Group 17.svg"
+            alt="United Kingdom"
+            class="uk__img"
+          />
+          <h2>UNITED KINGDOM</h2>
+          <a href="">SEE LOCATION</a>
         </article>
       </section>
     </main>
 
-    <footer>
-      <header>
-        <img
-          src="./src/img/Group 13.png"
-          alt="Logo Designo"
-          class="header__nav__img"
-        />
-        <nav>
-          <ul class="header__nav__order">
-            <li><a href="">Our company</a></li>
-            <li><a href="./mariya/locations.html">Locations</a></li>
-            <li><a href="./mariya/contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+    <footer class="footer__contact">
+      <div class="lower__container">
+        <section class="footer__nav">
+          <div>
+            <img
+              src="../src/img/Group 13-1.png"
+              alt="Logo Designo"
+              class="footer__nav__img"
+            />
+            <nav>
+              <ul class="footer__nav__order">
+                <li><a href="">Our company</a></li>
+                <li><a href="./mariya/locations.html">Locations</a></li>
+                <li><a href="./mariya/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <hr />
+        <div class="inline__lower__container">
+          <section class="section__info">
+            <div class="info__address">
+              <h3>Designo Central Office</h3>
+              <p>
+                386 Wellington Street <br />
+                1000 Brussels - Belgium
+              </p>
+            </div>
+            <div class="info__contact">
+              <h3>Contact Us (Central Office)</h3>
+              <p>
+                P : +1 253-863-8967 <br />
+                M : contact@designo.co
+              </p>
+            </div>
+          </section>
+          <section class="section__media">
+            <ul class="media__order">
+              <li><i class="fa-brands fa-facebook-square"></i></li>
+              <li><i class="fa-brands fa-youtube-square"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-pinterest"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
