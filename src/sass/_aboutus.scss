@@ -1,7 +1,7 @@
 body {
   width: 1440px;
   .section__aboutUs {
-    @include container;
+    @include containerA;
     div {
       background-color: $pink;
       color: $white;
@@ -22,7 +22,7 @@ body {
     }
   }
   .section__skills {
-    @include container;
+    @include containerB;
     div {
       background-color: $pinkBg;
       color: $grey;
@@ -91,7 +91,7 @@ body {
     }
   }
   .section__solutions {
-    @include container;
+    @include containerB;
     div {
       background-color: $pinkBg;
       color: $grey;
