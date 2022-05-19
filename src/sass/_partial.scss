@@ -100,3 +100,65 @@ $fontJ: "Jost", sans-serif;
   width: 445px;
   margin: auto;
 }
+
+/* mixin locations*/
+
+@mixin containerLA {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 32px;
+  gap: 30px;
+}
+
+@mixin containerLB {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 160px;
+  gap: 30px;
+}
+@mixin lowcontainer {
+  background-color: $pinkBg;
+  height: 326px;
+  width: 730px;
+  border-radius: 20px;
+}
+
+@mixin lowcontainerH {
+  color: $pink;
+  margin-bottom: 24px;
+  margin-top: 88px;
+  margin-left: 95px;
+  font-family: $fontJ;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+@mixin lowcontainerHT {
+  display: flex;
+  gap: 30px;
+  margin-left: 95px;
+}
+
+@mixin lowcontainerHTD {
+  height: 78px;
+  width: 255px;
+  color: $blackL;
+}
+
+@mixin lowcontainerHTDH {
+  font-family: $fontJ;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@mixin lowcontainerHTDP {
+  font-family: $fontJ;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
