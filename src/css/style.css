@@ -25,11 +25,16 @@ body header img {
   -ms-flex-item-align: center;
       align-self: center;
 }
-body header nav li {
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 42px;
+}
+body header nav ul li {
   display: inline-block;
 }
-body header nav li a {
-  padding-right: 42px;
+body header nav ul li a {
   text-decoration: none;
   color: rgb(29, 28, 30);
   font-style: normal;
@@ -421,7 +426,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
 }
 .section__solutions__design div h2 {
   height: 48px;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -432,12 +437,50 @@ footer .lower__container .inline__lower__container .section__media ul li i {
 .section__solutions__design div p {
   height: 52px;
   width: 730px;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
+}
+
+.section__tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto 192px;
+  width: 1110px;
+  height: 988px;
+}
+.section__tech .tech__div {
+  width: 350px;
+  height: 478px;
+  text-align: center;
+  background-color: #FDF3F0;
+  border-radius: 15px;
+}
+.section__tech .tech__div h2 {
+  margin-top: 30px;
+  margin-bottom: 16px;
+  color: rgb(231, 129, 107);
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.section__tech .tech__div p {
+  margin: 0 auto;
+  width: 286px;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 body {
