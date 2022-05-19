@@ -426,7 +426,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
 }
 .section__solutions__design div h2 {
   height: 48px;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -437,7 +437,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
 .section__solutions__design div p {
   height: 52px;
   width: 730px;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -460,14 +460,14 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   width: 350px;
   height: 478px;
   text-align: center;
-  background-color: #FDF3F0;
+  background-color: rgb(253, 243, 240);
   border-radius: 15px;
 }
 .section__tech .tech__div h2 {
   margin-top: 30px;
   margin-bottom: 16px;
   color: rgb(231, 129, 107);
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -476,7 +476,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
 .section__tech .tech__div p {
   margin: 0 auto;
   width: 286px;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -519,35 +519,97 @@ body .section__location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 160px;
+  font-family: "Jost", sans-serif;
+  color: rgb(51, 49, 54);
+  width: 1110px;
+  text-align: center;
+}
+body .section__location img {
+  margin: 0 auto 48px;
+}
+body .section__location h2 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  color: rgb(51, 49, 54);
+  margin: 0 auto 32px;
+  text-transform: uppercase;
+}
+body .section__location a {
+  max-width: 152px;
+  max-height: 56px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  border-radius: 8px;
+  margin-right: 96px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 auto 160px;
+}
+body .section__location a:link,
+body .section__location a:visited {
+  padding: 18px 18.5px 16px;
+  background-color: rgb(231, 129, 107);
 }
 body .section__solutions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  margin: 0 auto 160px;
+  width: 1111px;
+  height: 640px;
 }
 body .section__solutions div {
   height: 480px;
-  background-color: red;
-  color: white;
+  background-color: rgb(253, 243, 240);
+  color: rgb(51, 49, 54);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .section__solutions div h1 {
+  color: rgb(231, 129, 107);
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+}
+body .section__solutions div p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }
 body .section__solutions div .solutions__img {
   height: 480px;
 }
 
-body {
-  width: 1440px;
-}
 body .section__location__belgium {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,4 +627,6 @@ body .section__location__uk {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }/*# sourceMappingURL=style.css.map */
