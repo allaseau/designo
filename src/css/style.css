@@ -543,4 +543,26 @@ body .section__solutions div {
 }
 body .section__solutions div .solutions__img {
   height: 480px;
+}
+
+body {
+  width: 1440px;
+}
+body .section__location__belgium {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .section__location__belgium .box {
+  background-image: url();
+}
+body .section__location__australia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .section__location__uk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
