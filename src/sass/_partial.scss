@@ -66,11 +66,17 @@ $fontJ: "Jost", sans-serif;
 
 /*mixin aboutUs*/
 
-@mixin container {
+@mixin containerA {
   display: flex;
   margin: 0 auto 160px;
   width: 1111px;
   height: 480px;
+}
+@mixin containerB {
+  display: flex;
+  margin: 0 auto 160px;
+  width: 1111px;
+  height: 640px;
 }
 
 @mixin h1sectionT {

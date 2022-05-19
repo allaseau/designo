@@ -535,7 +535,7 @@ body .section__skills {
   display: flex;
   margin: 0 auto 160px;
   width: 1111px;
-  height: 480px;
+  height: 640px;
 }
 body .section__skills div {
   background-color: rgb(253, 243, 240);
@@ -634,7 +634,7 @@ body .section__solutions {
   display: flex;
   margin: 0 auto 160px;
   width: 1111px;
-  height: 480px;
+  height: 640px;
 }
 body .section__solutions div {
   background-color: rgb(253, 243, 240);
