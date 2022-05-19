@@ -399,7 +399,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   font-size: 24px;
 }
 
-.section__solutions {
+.section__solutions__design {
   color: rgb(255, 255, 255);
   width: 1111px;
   height: 252px;
@@ -415,11 +415,11 @@ footer .lower__container .inline__lower__container .section__media ul li i {
       -ms-flex-align: center;
           align-items: center;
 }
-.section__solutions div {
+.section__solutions__design div {
   margin-left: 190px;
   margin-right: 191px;
 }
-.section__solutions div h2 {
+.section__solutions__design div h2 {
   height: 48px;
   font-family: "Jost";
   font-style: normal;
@@ -429,7 +429,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   margin-bottom: 24px;
   text-align: center;
 }
-.section__solutions div p {
+.section__solutions__design div p {
   height: 52px;
   width: 730px;
   font-family: "Jost";
