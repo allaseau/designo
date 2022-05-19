@@ -1,3 +1,5 @@
+/* mixin index*/
+/*mixin aboutUs*/
 * {
   margin: 0;
   padding: 0;
@@ -490,30 +492,84 @@ body .section__aboutUs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  margin: 0 auto 160px;
+  width: 1111px;
+  height: 480px;
 }
 body .section__aboutUs div {
-  height: 480px;
-  background-color: red;
-  color: white;
+  background-color: rgb(231, 129, 107);
+  color: rgb(255, 255, 255);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+body .section__aboutUs div h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin-left: 95px;
+  margin-right: 95px;
+  margin-top: 154px;
+  margin-bottom: 24px;
+  width: 445px;
+}
+body .section__aboutUs div p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 445px;
+  margin: auto;
+}
+body .section__aboutUs div .solutions__img {
+  width: 476px;
+  height: 480px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 body .section__skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
+  margin: 0 auto 160px;
+  width: 1111px;
+  height: 480px;
 }
 body .section__skills div {
-  height: 480px;
-  background-color: red;
-  color: white;
+  background-color: rgb(253, 243, 240);
+  color: rgb(51, 49, 54);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-body .section__skills div .section__skills__img {
-  height: 480px;
+body .section__skills div h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin-left: 95px;
+  margin-right: 95px;
+  margin-top: 154px;
+  margin-bottom: 24px;
+  width: 445px;
+  color: rgb(231, 129, 107);
+}
+body .section__skills div p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 445px;
+  margin: auto;
+}
+body .section__skills div .solutions__img {
+  width: 476px;
+  height: 640px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 body .section__location {
   display: -webkit-box;
@@ -578,26 +634,26 @@ body .section__solutions {
   display: flex;
   margin: 0 auto 160px;
   width: 1111px;
-  height: 640px;
+  height: 480px;
 }
 body .section__solutions div {
-  height: 480px;
   background-color: rgb(253, 243, 240);
   color: rgb(51, 49, 54);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  margin-bottom: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 body .section__solutions div h1 {
-  color: rgb(231, 129, 107);
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 48px;
+  margin-left: 95px;
+  margin-right: 95px;
+  margin-top: 154px;
+  margin-bottom: 24px;
+  width: 445px;
+  color: rgb(231, 129, 107);
 }
 body .section__solutions div p {
   font-family: "Jost", sans-serif;
@@ -605,9 +661,12 @@ body .section__solutions div p {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+  width: 445px;
+  margin: auto;
 }
 body .section__solutions div .solutions__img {
-  height: 480px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  width: 476px;
+  height: 640px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }/*# sourceMappingURL=style.css.map */

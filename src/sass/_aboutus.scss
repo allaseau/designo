@@ -1,27 +1,45 @@
 body {
   width: 1440px;
   .section__aboutUs {
-    display: flex;
-    margin: auto;
+    @include container;
     div {
-      height: 480px;
-      background-color: red;
-      color: white;
+      background-color: $pink;
+      color: $white;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
+      h1 {
+        @include h1sectionT;
+      }
+      p {
+        @include psectionT;
+      }
+      .solutions__img {
+        width: 476px;
+        height: 480px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
     }
   }
   .section__skills {
-    display: flex;
-    margin-top: 20px;
+    @include container;
     div {
-      height: 480px;
-      background-color: red;
-      color: white;
+      background-color: $pinkBg;
+      color: $grey;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
-      .section__skills__img {
-        height: 480px;
+      h1 {
+        @include h1sectionT;
+        color: $pink;
+      }
+      p {
+        @include psectionT;
+      }
+      .solutions__img {
+        width: 476px;
+        height: 640px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
       }
     }
   }
@@ -73,37 +91,24 @@ body {
     }
   }
   .section__solutions {
-    display: flex;
-    margin: 0 auto 160px;
-    width: 1111px;
-    height: 640px;
+    @include container;
     div {
-      height: 480px;
       background-color: $pinkBg;
       color: $grey;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
-      margin-bottom: 20px;
-      align-items: center;
       h1 {
+        @include h1sectionT;
         color: $pink;
-        font-family: $fontJ;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 48px;
       }
       p {
-        font-family: $fontJ;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
+        @include psectionT;
       }
       .solutions__img {
-        height: 480px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
+        width: 476px;
+        height: 640px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
       }
     }
   }
