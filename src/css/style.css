@@ -565,6 +565,148 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   line-height: 26px;
 }
 
+.projects__graphic__design .projects__graphic__design__img {
+  position: relative;
+  width: 541px;
+  height: 308px;
+}
+.projects__graphic__design .projects__graphic__design__img .projects__graphic__design__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects__graphic__design .projects__graphic__design__img .projects__graphic__design__text h1 {
+  width: 400px;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.projects__graphic__design .projects__graphic__design__img .projects__graphic__design__text a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.projects__app__design .projects__app__design__img {
+  position: relative;
+  width: 541px;
+  height: 308px;
+}
+.projects__app__design .projects__app__design__img .projects__app__design__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects__app__design .projects__app__design__img .projects__app__design__text h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.projects__app__design .projects__app__design__img .projects__app__design__text a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.projects__web__design .projects__web__design__img {
+  position: relative;
+}
+.projects__web__design .projects__web__design__img .web {
+  width: 541px;
+  height: 308px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.projects__web__design .projects__web__design__img .projects__web__design__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects__web__design .projects__web__design__img .projects__web__design__text h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.projects__web__design .projects__web__design__img .projects__web__design__text a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
 body {
   width: 1440px;
 }
