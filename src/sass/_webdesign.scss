@@ -68,3 +68,80 @@
     }
   }
 }
+.projects__graphic__design {
+
+  .projects__graphic__design__img {
+    position: relative;
+    width:541px ;
+    height: 308px;
+
+    .projects__graphic__design__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include projectsT;
+
+      h1 {
+        width: 400px;
+        text-align: center;
+        @include projectsH;
+      }
+
+      a {
+        @include projectsA;
+      }
+    }
+  }
+}
+.projects__app__design {
+
+  .projects__app__design__img {
+    position: relative;
+    width:541px ;
+    height: 308px;
+
+
+    .projects__app__design__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include projectsT;
+
+      h1 {
+        @include projectsH;
+      }
+
+      a {
+        @include projectsA;
+      }
+    }
+  }
+}
+.projects__web__design {
+  .projects__web__design__img {
+    position: relative;
+    .web{
+      width: 541px;
+      height: 308px;
+      object-fit:cover ;
+      border-radius: 15px;
+    }
+    .projects__web__design__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include projectsT;
+
+      h1 {
+        @include projectsH;
+      }
+
+      a {
+        @include projectsA;
+      }
+    }
+  }
+}
