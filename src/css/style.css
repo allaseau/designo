@@ -43,13 +43,76 @@ body header nav ul li a {
   line-height: 14px;
   letter-spacing: 2px;
 }
+body main .section__services {
+  background-image: url("../img/fond 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 640px;
+  width: 1111px;
+  margin: 0 auto 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body main .section__services div {
+  width: 540px;
+  margin: 0 476px 95px 145px;
+  text-align: left;
+}
+body main .section__services div h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 11px;
+  padding-bottom: 10px;
+}
+body main .section__services div p {
+  margin-bottom: 58px;
+  width: 445px;
+  color: rgb(255, 255, 255);
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+body main .section__services div a {
+  max-width: 152px;
+  max-height: 56px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgb(29, 28, 30);
+  margin: 0 auto 160px;
+}
+body main .section__services div a:link,
+body main .section__services div a:visited {
+  padding: 18px 25px 16px 24px;
+  background-color: rgb(255, 255, 255);
+}
 body main .section__projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "a b" "a c";
   gap: 24px 30px;
   margin: 0 auto 160px;
-  width: 1082px;
+  width: 1111px;
 }
 body main .section__projects .projects__web {
   grid-area: a;
@@ -101,6 +164,8 @@ body main .projects__app {
 }
 body main .projects__app .projects__app__img {
   position: relative;
+  width: 541px;
+  height: 308px;
 }
 body main .projects__app .projects__app__img .projects__app__text {
   position: absolute;
@@ -146,6 +211,8 @@ body main .projects__graphic {
 }
 body main .projects__graphic .projects__graphic__img {
   position: relative;
+  width: 541px;
+  height: 308px;
 }
 body main .projects__graphic .projects__graphic__img .projects__graphic__text {
   position: absolute;
