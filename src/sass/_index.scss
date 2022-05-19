@@ -97,6 +97,8 @@ body {
           transform: translate(-50%, -50%);
           @include projectsT;
           h1 {
+            width: 400px;
+            text-align: center;
             @include projectsH;
           }
           a {
