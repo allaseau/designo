@@ -608,25 +608,84 @@ body .section__solutions div p {
 }
 body .section__solutions div .solutions__img {
   height: 480px;
-}
-
-body .section__location__belgium {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-body .section__location__belgium .box {
-  background-image: url();
-}
-body .section__location__australia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-body .section__location__uk {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.section__location__belgium {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 32px;
+}
+.section__location__belgium .box {
+  background-color: rgb(253, 243, 240);
+  height: 326px;
+  width: 730px;
+  border-radius: 20px;
+  padding-top: 88px;
+  padding-left: 95px;
+}
+.section__location__belgium .box h2 {
+  color: rgb(231, 129, 107);
+}
+.section__location__belgium .box div {
+  height: 78px;
+  width: 255px;
+  padding-top: 24px;
+}
+
+.section__location__australia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 32px;
+}
+.section__location__australia .box {
+  background-color: rgb(253, 243, 240);
+  height: 326px;
+  width: 730px;
+  border-radius: 20px;
+  padding-top: 88px;
+  padding-left: 95px;
+}
+.section__location__australia .box h2 {
+  color: rgb(231, 129, 107);
+}
+.section__location__australia .box div {
+  height: 78px;
+  width: 255px;
+  padding-top: 24px;
+}
+
+.section__location__uk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 32px;
+}
+.section__location__uk .box {
+  background-color: rgb(253, 243, 240);
+  height: 326px;
+  width: 730px;
+  border-radius: 20px;
+  padding-top: 88px;
+  padding-left: 95px;
+}
+.section__location__uk .box h2 {
+  color: rgb(231, 129, 107);
+}
+.section__location__uk .box div {
+  height: 78px;
+  width: 255px;
+  padding-top: 24px;
 }/*# sourceMappingURL=style.css.map */
