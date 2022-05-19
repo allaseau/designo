@@ -20,6 +20,7 @@ body header {
           justify-content: space-between;
   width: 1111px;
   margin: 65px auto;
+  text-transform: uppercase;
 }
 body header img {
   max-width: 197px;
