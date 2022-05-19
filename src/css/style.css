@@ -380,5 +380,27 @@ body footer .lower__container .inline__lower__container .section__media ul li i 
 }
 .section__tech .tech__div {
   width: 350px;
-  height: 625px;
+  height: 478px;
+  text-align: center;
+  background-color: #FDF3F0;
+  border-radius: 15px;
+}
+.section__tech .tech__div h2 {
+  margin-top: 30px;
+  margin-bottom: 16px;
+  color: rgb(231, 129, 107);
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.section__tech .tech__div p {
+  margin: 0 auto;
+  width: 286px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }/*# sourceMappingURL=style.css.map */
