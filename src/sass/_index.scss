@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Jost";
   max-width: 1440px;
   max-height: 2940px;
   margin: auto;
+
   header {
     display: flex;
     justify-content: space-between;
@@ -18,18 +20,20 @@ body {
       max-height: 27px;
       align-self: center;
     }
+
     nav {
-      ul{
+      ul {
         display: flex;
-        gap:42px;
+        gap: 42px;
+
         li {
           display: inline-block;
-  
+
           a {
-        
+
             text-decoration: none;
             color: $black;
-            
+
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -42,6 +46,65 @@ body {
   }
 
   main {
+    .section__services {
+      background-image: url("../img/fond 1.png") ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      ;
+      height:640px ;
+      width: 1111px;
+      margin: 0 auto 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div{
+        width: 540px;
+        margin: 0 476px 95px 145px ;
+        text-align: left;
+        h1{
+          color: $white;
+          font-family: $fontJ;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 48px;
+          line-height: 48px;
+          margin-bottom: 11px;
+          padding-bottom: 10px;
+        }
+        p{
+          margin-bottom: 58px;
+          width:445px;
+          color: $white;
+          font-family: $fontJ;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+        }
+        a {
+          max-width: 152px;
+          max-height: 56px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-family: $fontJ;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          border-radius: 8px;
+          text-decoration: none;
+          color: $black;
+          margin: 0 auto 160px;
+        }
+  
+        a:link,
+        a:visited {
+          padding: 18px 25px 16px 24px;
+          background-color: $white;
+        }
+      }
+    }
+
     .section__projects {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -50,20 +113,25 @@ body {
         "a c";
       gap: 24px 30px;
       margin: 0 auto 160px;
-      width: 1082px;
+      width: 1111px;
+
       .projects__web {
         grid-area: a;
+
         .projects__web__img {
           position: relative;
+
           .projects__web__text {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             @include projectsT;
+
             h1 {
               @include projectsH;
             }
+
             a {
               @include projectsA;
             }
@@ -71,40 +139,55 @@ body {
         }
       }
     }
+
     .projects__app {
       grid-area: b;
+
       .projects__app__img {
         position: relative;
+        width:541px ;
+        height: 308px;
+
+
         .projects__app__text {
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           @include projectsT;
+
           h1 {
             @include projectsH;
           }
+
           a {
             @include projectsA;
           }
         }
       }
     }
+
     .projects__graphic {
       grid-area: c;
+
       .projects__graphic__img {
         position: relative;
+        width:541px ;
+        height: 308px;
+
         .projects__graphic__text {
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           @include projectsT;
+
           h1 {
             width: 400px;
             text-align: center;
             @include projectsH;
           }
+
           a {
             @include projectsA;
           }
@@ -128,9 +211,11 @@ body {
   .values__passion {
     font-size: small;
     text-align: center;
+
     img {
       margin-bottom: 48px;
     }
+
     h2 {
       margin-bottom: 32px;
       font-weight: 500;
@@ -141,6 +226,7 @@ body {
       width: 350px;
       height: 26px;
     }
+
     p {
       font-weight: 400;
       font-size: 16px;
@@ -150,9 +236,11 @@ body {
       height: 104px;
     }
   }
+
   .values__resourceful {
     @extend .values__passion;
   }
+
   .values__friendly {
     @extend .values__passion;
   }
@@ -162,6 +250,7 @@ footer {
   position: relative;
   z-index: auto;
   height: 393px;
+
   .section__contact {
     display: flex;
     align-items: center;
@@ -187,6 +276,7 @@ footer {
         font-size: 40px;
         line-height: 40px;
       }
+
       p {
         max-width: 459px;
         max-height: 78px;
@@ -198,6 +288,7 @@ footer {
         margin-bottom: 46px;
       }
     }
+
     a {
       max-width: 152px;
       max-height: 56px;
@@ -213,24 +304,29 @@ footer {
       text-decoration: none;
       color: $black;
     }
+
     a:link,
     a:visited {
       padding: 17px 19px 17px 18px;
       background-color: $white;
     }
   }
+
   .lower__container {
     background-color: $black;
+
     .footer__nav {
       div {
         display: flex;
         justify-content: space-between;
+
         .footer__nav__img {
           height: 27px;
           width: 197px;
           margin-left: 165px;
           margin-top: 144px;
         }
+
         ul {
           list-style: none;
           display: flex;
@@ -239,6 +335,7 @@ footer {
           margin-right: 166px;
           margin-top: 151px;
           margin-bottom: 40px;
+
           li {
             a {
               text-decoration: none;
@@ -255,16 +352,19 @@ footer {
         }
       }
     }
+
     hr {
       width: 1111px;
       margin: auto;
       opacity: 0.1;
     }
+
     .inline__lower__container {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
       margin: 0;
+
       .section__info {
         display: flex;
         margin-left: 165px;
@@ -274,30 +374,37 @@ footer {
         font-family: $fontJ;
         font-size: 16px;
         line-height: 26px;
+
         .info__address {
           padding-right: 30px;
           @include info;
           margin-bottom: 72px;
+
           h3 {
             font-weight: 700;
           }
+
           p {
             font-weight: 400;
           }
         }
+
         .section__contact {
           @include info;
         }
       }
+
       .section__media {
         margin-top: 85px;
         margin-right: 164px;
         margin-bottom: 72px;
+
         ul {
           list-style: none;
           display: flex;
           gap: 16px;
           color: $pink;
+
           li {
             i {
               font-size: 24px;
