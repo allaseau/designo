@@ -63,12 +63,15 @@ body main .section__services {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body main .section__services div {
+body main .section__services article {
+  position: relative;
+}
+body main .section__services article div {
   width: 540px;
   margin: 0 476px 95px 145px;
   text-align: left;
 }
-body main .section__services div h1 {
+body main .section__services article div h1 {
   color: rgb(255, 255, 255);
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -78,7 +81,7 @@ body main .section__services div h1 {
   margin-bottom: 11px;
   padding-bottom: 10px;
 }
-body main .section__services div p {
+body main .section__services article div p {
   margin-bottom: 58px;
   width: 445px;
   color: rgb(255, 255, 255);
@@ -88,7 +91,7 @@ body main .section__services div p {
   font-size: 16px;
   line-height: 26px;
 }
-body main .section__services div a {
+body main .section__services article div a {
   max-width: 152px;
   max-height: 56px;
   letter-spacing: 1px;
@@ -103,10 +106,19 @@ body main .section__services div a {
   color: rgb(29, 28, 30);
   margin: 0 auto 160px;
 }
-body main .section__services div a:link,
-body main .section__services div a:visited {
+body main .section__services article div a:link,
+body main .section__services article div a:visited {
   padding: 18px 25px 16px 24px;
   background-color: rgb(255, 255, 255);
+}
+body main .section__services article .services__img {
+  height: 489.25px;
+  width: 267.31px;
+  position: absolute;
+  top: 67.85%;
+  left: 78%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 body main .section__projects {
   display: grid;
