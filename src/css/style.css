@@ -1190,7 +1190,8 @@ body .section__solutions div .solutions__img {
   font-size: 15px;
   line-height: 26px;
 }
-.section__form form input {
+
+input {
   width: 380px;
   margin-bottom: 25px;
   border: none;
@@ -1198,20 +1199,22 @@ body .section__solutions div .solutions__img {
   background-color: rgba(255, 255, 255, 0);
   color: rgb(255, 255, 255);
 }
-.section__form form input:focus {
+input:focus {
   outline: none;
 }
-.section__form form textarea {
+
+textarea {
   width: 380px;
   border: none;
   border-bottom: 1px solid rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0);
   resize: none;
 }
-.section__form form textarea:focus {
+textarea:focus {
   outline: none;
 }
-.section__form form button {
+
+button {
   padding: 17px 47px 17px 48px;
   margin-left: 228px;
   margin-right: 96px;
@@ -1227,7 +1230,8 @@ body .section__solutions div .solutions__img {
   text-align: center;
   letter-spacing: 1px;
 }
-.section__form form button:hover {
+
+button:hover {
   background-color: rgb(255, 173, 155);
   color: rgb(255, 255, 255);
   cursor: pointer;
