@@ -89,7 +89,10 @@ body {
       padding: 18px 18.5px 16px;
       background-color: $pink;
     }
-  }
+      a:hover{
+        background-color: $peach;
+      }
+    }
   .section__solutions {
     @include containerB;
     div {

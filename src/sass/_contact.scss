@@ -78,6 +78,11 @@
       text-align: center;
       letter-spacing: 1px;
     }
+    button:hover{
+      background-color: $peach;
+      color: $white;
+      cursor: pointer;
+    }
   }
 }
 .footer__contact {

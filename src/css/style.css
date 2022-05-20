@@ -47,6 +47,12 @@ body header nav ul li a {
   line-height: 14px;
   letter-spacing: 2px;
 }
+body header nav ul li a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: rgb(51, 49, 54);
+          text-decoration-color: rgb(51, 49, 54);
+}
 body main .section__services {
   background-image: url("../img/fond 1.png");
   background-repeat: no-repeat;
@@ -113,6 +119,10 @@ body main .section__services article div a:visited {
   padding: 18px 25px 16px 24px;
   background-color: rgb(255, 255, 255);
 }
+body main .section__services article div a:hover {
+  background-color: rgb(255, 173, 155);
+  color: rgb(255, 255, 255);
+}
 body main .section__services article .services__img {
   height: 489.25px;
   width: 267.31px;
@@ -132,11 +142,25 @@ body main .section__projects {
 }
 body main .section__projects .projects__web {
   grid-area: a;
+  background-color: rgb(231, 129, 107);
+  height: 640px;
+  border-radius: 15px;
 }
-body main .section__projects .projects__web .projects__web__img {
+body main .section__projects .projects__web a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+body main .section__projects .projects__web a .projects__web__img {
   position: relative;
 }
-body main .section__projects .projects__web .projects__web__img .projects__web__text {
+body main .section__projects .projects__web a .projects__web__img .projects__web__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -153,7 +177,7 @@ body main .section__projects .projects__web .projects__web__img .projects__web__
       -ms-flex-align: center;
           align-items: center;
 }
-body main .section__projects .projects__web .projects__web__img .projects__web__text h1 {
+body main .section__projects .projects__web a .projects__web__img .projects__web__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -164,54 +188,15 @@ body main .section__projects .projects__web .projects__web__img .projects__web__
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-body main .section__projects .projects__web .projects__web__img .projects__web__text a {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+body main .section__projects .projects__web a:hover img {
+  opacity: 0.5;
 }
-body main .projects__app {
+body main .section__projects .projects__app {
   grid-area: b;
+  background-color: rgb(231, 129, 107);
+  border-radius: 15px;
 }
-body main .projects__app .projects__app__img {
-  position: relative;
-  width: 541px;
-  height: 308px;
-}
-body main .projects__app .projects__app__img .projects__app__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-body main .projects__app .projects__app__img .projects__app__text h1 {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 2px;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-body main .projects__app .projects__app__img .projects__app__text a {
+body main .section__projects .projects__app a {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -222,15 +207,12 @@ body main .projects__app .projects__app__img .projects__app__text a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-body main .projects__graphic {
-  grid-area: c;
-}
-body main .projects__graphic .projects__graphic__img {
+body main .section__projects .projects__app a .projects__app__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-body main .projects__graphic .projects__graphic__img .projects__graphic__text {
+body main .section__projects .projects__app a .projects__app__img .projects__app__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -247,7 +229,59 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text {
       -ms-flex-align: center;
           align-items: center;
 }
-body main .projects__graphic .projects__graphic__img .projects__graphic__text h1 {
+body main .section__projects .projects__app a .projects__app__img .projects__app__text h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+body main .section__projects .projects__app a:hover img {
+  opacity: 0.5;
+}
+body main .section__projects .projects__graphic {
+  grid-area: c;
+  background-color: rgb(231, 129, 107);
+}
+body main .section__projects .projects__graphic a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+body main .section__projects .projects__graphic a .projects__graphic__img {
+  opacity: 1;
+  position: relative;
+  width: 541px;
+  height: 308px;
+}
+body main .section__projects .projects__graphic a .projects__graphic__img .projects__graphic__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .section__projects .projects__graphic a .projects__graphic__img .projects__graphic__text h1 {
   width: 400px;
   text-align: center;
   font-family: "Jost", sans-serif;
@@ -260,19 +294,10 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text h1
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-body main .projects__graphic .projects__graphic__img .projects__graphic__text a {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+body main .section__projects .projects__graphic a:hover img {
+  opacity: 0.5;
 }
-
-.section__values {
+body main .section__values {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,14 +318,14 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text a 
   color: rgb(51, 49, 54);
   width: 1110px;
 }
-.section__values .values__passion, .section__values .values__friendly, .section__values .values__resourceful {
+body main .section__values .values__passion, body main .section__values .values__friendly, body main .section__values .values__resourceful {
   font-size: small;
   text-align: center;
 }
-.section__values .values__passion img, .section__values .values__friendly img, .section__values .values__resourceful img {
+body main .section__values .values__passion img, body main .section__values .values__friendly img, body main .section__values .values__resourceful img {
   margin-bottom: 48px;
 }
-.section__values .values__passion h2, .section__values .values__friendly h2, .section__values .values__resourceful h2 {
+body main .section__values .values__passion h2, body main .section__values .values__friendly h2, body main .section__values .values__resourceful h2 {
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 20px;
@@ -310,7 +335,7 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text a 
   width: 350px;
   height: 26px;
 }
-.section__values .values__passion p, .section__values .values__friendly p, .section__values .values__resourceful p {
+body main .section__values .values__passion p, body main .section__values .values__friendly p, body main .section__values .values__resourceful p {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -318,12 +343,12 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text a 
   width: 350px;
   height: 104px;
 }
-footer {
+body footer {
   position: relative;
   z-index: auto;
   height: 393px;
 }
-footer .section__contact {
+body footer .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,10 +367,10 @@ footer .section__contact {
   position: relative;
   z-index: 1;
 }
-footer .section__contact div {
+body footer .section__contact div {
   margin-left: 95px;
 }
-footer .section__contact div h1 {
+body footer .section__contact div h1 {
   max-width: 268px;
   max-height: 98px;
   font-family: "Jost";
@@ -354,7 +379,7 @@ footer .section__contact div h1 {
   font-size: 40px;
   line-height: 40px;
 }
-footer .section__contact div p {
+body footer .section__contact div p {
   max-width: 459px;
   max-height: 78px;
   font-family: "Jost";
@@ -364,7 +389,7 @@ footer .section__contact div p {
   line-height: 26px;
   margin-bottom: 46px;
 }
-footer .section__contact a {
+body footer .section__contact a {
   max-width: 152px;
   max-height: 56px;
   letter-spacing: 1px;
@@ -379,15 +404,19 @@ footer .section__contact a {
   text-decoration: none;
   color: rgb(29, 28, 30);
 }
-footer .section__contact a:link,
-footer .section__contact a:visited {
+body footer .section__contact a:link,
+body footer .section__contact a:visited {
   padding: 17px 19px 17px 18px;
   background-color: rgb(255, 255, 255);
 }
-footer .lower__container {
+body footer .section__contact a:hover {
+  background-color: rgb(255, 173, 155);
+  color: rgb(255, 255, 255);
+}
+body footer .lower__container {
   background-color: rgb(29, 28, 30);
 }
-footer .lower__container .footer__nav div {
+body footer .lower__container .footer__nav div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,13 +424,13 @@ footer .lower__container .footer__nav div {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-footer .lower__container .footer__nav div .footer__nav__img {
+body footer .lower__container .footer__nav div .footer__nav__img {
   height: 27px;
   width: 197px;
   margin-left: 165px;
   margin-top: 144px;
 }
-footer .lower__container .footer__nav div ul {
+body footer .lower__container .footer__nav div ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,7 +443,7 @@ footer .lower__container .footer__nav div ul {
   margin-top: 151px;
   margin-bottom: 40px;
 }
-footer .lower__container .footer__nav div ul li a {
+body footer .lower__container .footer__nav div ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -425,12 +454,18 @@ footer .lower__container .footer__nav div ul li a {
   line-height: 14px;
   letter-spacing: 2px;
 }
-footer .lower__container hr {
+body footer .lower__container .footer__nav div ul li a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: rgb(255, 255, 255);
+          text-decoration-color: rgb(255, 255, 255);
+}
+body footer .lower__container hr {
   width: 1111px;
   margin: auto;
   opacity: 0.1;
 }
-footer .lower__container .inline__lower__container {
+body footer .lower__container .inline__lower__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,7 +477,7 @@ footer .lower__container .inline__lower__container {
           align-items: flex-end;
   margin: 0;
 }
-footer .lower__container .inline__lower__container .section__info {
+body footer .lower__container .inline__lower__container .section__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,28 +489,28 @@ footer .lower__container .inline__lower__container .section__info {
   font-size: 16px;
   line-height: 26px;
 }
-footer .lower__container .inline__lower__container .section__info .info__address {
+body footer .lower__container .inline__lower__container .section__info .info__address {
   padding-right: 30px;
   width: 350px;
   height: 78px;
   margin-bottom: 72px;
 }
-footer .lower__container .inline__lower__container .section__info .info__address h3 {
+body footer .lower__container .inline__lower__container .section__info .info__address h3 {
   font-weight: 700;
 }
-footer .lower__container .inline__lower__container .section__info .info__address p {
+body footer .lower__container .inline__lower__container .section__info .info__address p {
   font-weight: 400;
 }
-footer .lower__container .inline__lower__container .section__info .section__contact {
+body footer .lower__container .inline__lower__container .section__info .section__contact {
   width: 350px;
   height: 78px;
 }
-footer .lower__container .inline__lower__container .section__media {
+body footer .lower__container .inline__lower__container .section__media {
   margin-top: 85px;
   margin-right: 164px;
   margin-bottom: 72px;
 }
-footer .lower__container .inline__lower__container .section__media ul {
+body footer .lower__container .inline__lower__container .section__media ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,8 +518,12 @@ footer .lower__container .inline__lower__container .section__media ul {
   gap: 16px;
   color: rgb(231, 129, 107);
 }
-footer .lower__container .inline__lower__container .section__media ul li i {
+body footer .lower__container .inline__lower__container .section__media ul li i {
   font-size: 24px;
+}
+body footer .lower__container .inline__lower__container .section__media ul li i:hover {
+  color: rgb(255, 173, 155);
+  cursor: pointer;
 }
 
 .section__solutions__design {
@@ -565,13 +604,38 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   font-size: 16px;
   line-height: 26px;
 }
+.section__tech .tech__div:hover {
+  background-color: rgb(231, 129, 107);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.section__tech .tech__div:hover h2 {
+  color: rgb(255, 255, 255);
+}
 
-.projects__graphic__design .projects__graphic__design__img {
+.projects__graphic__design {
+  background-color: rgb(231, 129, 107);
+  border-radius: 15px;
+  width: 541px;
+  height: 308px;
+}
+.projects__graphic__design a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.projects__graphic__design a .projects__graphic__design__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-.projects__graphic__design .projects__graphic__design__img .projects__graphic__design__text {
+.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -588,7 +652,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects__graphic__design .projects__graphic__design__img .projects__graphic__design__text h1 {
+.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
   width: 400px;
   text-align: center;
   font-family: "Jost", sans-serif;
@@ -601,24 +665,22 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.projects__graphic__design .projects__graphic__design__img .projects__graphic__design__text a {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+.projects__graphic__design a:hover img {
+  opacity: 0.5;
 }
 
-.projects__app__design .projects__app__design__img {
+.projects__app__design {
+  background-color: rgb(231, 129, 107);
+  border-radius: 15px;
+  width: 541px;
+  height: 308px;
+}
+.projects__app__design a .projects__app__design__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-.projects__app__design .projects__app__design__img .projects__app__design__text {
+.projects__app__design a .projects__app__design__img .projects__app__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -635,7 +697,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects__app__design .projects__app__design__img .projects__app__design__text h1 {
+.projects__app__design a .projects__app__design__img .projects__app__design__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -646,7 +708,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.projects__app__design .projects__app__design__img .projects__app__design__text a {
+.projects__app__design a .projects__app__design__img .projects__app__design__text p {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -657,18 +719,38 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+.projects__app__design a:hover img {
+  opacity: 0.5;
+}
 
-.projects__web__design .projects__web__design__img {
+.projects__web__design {
+  background-color: rgb(231, 129, 107);
+  border-radius: 15px;
+  width: 541px;
+  height: 308px;
+}
+.projects__web__design a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.projects__web__design a .projects__web__design__img {
   position: relative;
 }
-.projects__web__design .projects__web__design__img .web {
+.projects__web__design a .projects__web__design__img .web {
   width: 541px;
   height: 308px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
 }
-.projects__web__design .projects__web__design__img .projects__web__design__text {
+.projects__web__design a .projects__web__design__img .projects__web__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -685,7 +767,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects__web__design .projects__web__design__img .projects__web__design__text h1 {
+.projects__web__design a .projects__web__design__img .projects__web__design__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -696,16 +778,8 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.projects__web__design .projects__web__design__img .projects__web__design__text a {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+.projects__web__design a:hover img {
+  opacity: 0.5;
 }
 
 body {
@@ -850,6 +924,9 @@ body .section__location a:link,
 body .section__location a:visited {
   padding: 18px 18.5px 16px;
   background-color: rgb(231, 129, 107);
+}
+body .section__location a:hover {
+  background-color: rgb(255, 173, 155);
 }
 body .section__solutions {
   display: -webkit-box;
@@ -1149,6 +1226,11 @@ body .section__solutions div .solutions__img {
   line-height: 22px;
   text-align: center;
   letter-spacing: 1px;
+}
+.section__form form button:hover {
+  background-color: rgb(255, 173, 155);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .footer__contact {
