@@ -29,7 +29,7 @@
           alt="Logo Designo"
           class="header__nav__img"
         />
-        </a>
+      </a>
       <nav>
         <ul class="header__nav__order">
           <li><a href="../about.html">OUR COMPANY</a></li>
@@ -53,19 +53,46 @@
           <form action="POST">
             <div>
               <label for="Name">Name</label><br />
-              <input name="name" type="text" required /> <br />
+              <input
+                name="name"
+                type="text"
+                required
+                oninvalid="this.setCustomValidity('Cant be empty')"
+                oninput="this.setCustomValidity('')"
+              />
+              <br />
               <label for="Email Address">Email Address</label><br />
-              <input name="email address" type="text" required /> <br />
+              <input
+                name="email address"
+                type="email"
+                required
+                oninvalid="this.setCustomValidity('Cant be empty')"
+                oninput="this.setCustomValidity('')"
+              />
+              <br />
               <label for="Phone">Phone</label><br />
-              <input name="phone" type="text" required /> <br />
+              <input
+                name="phone"
+                type="tel"
+                required
+                oninvalid="this.setCustomValidity('Cant be empty')"
+                oninput="this.setCustomValidity('')"
+              />
+              <br />
             </div>
             <div>
               <label for="Your Message">Your Message</label>
               <br />
-              <textarea name="your message" cols="30" rows="5"></textarea>
-              <br />
-              <button type="submit" value="Submit">Submit</button>
+              <textarea
+                name="your message"
+                cols="30"
+                rows="5"
+                required
+                oninvalid="this.setCustomValidity('Cant be empty')"
+                oninput="this.setCustomValidity('')"
+              ></textarea>
             </div>
+            <button type="submit" value="Submit">Submit</button>
           </form>
         </div>
       </section>

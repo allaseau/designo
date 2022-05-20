@@ -1,4 +1,4 @@
-.section__form{
+.section__form {
   display: flex;
   background-color: $pink;
   border-radius: 20px;
@@ -7,30 +7,77 @@
   height: 480px;
   align-items: center;
   padding: 20px;
-  div{
-    h2{
+  margin: 0 auto 160px;
+  div {
+    h2 {
       width: 540px;
       height: 48px;
-      padding-top: 295px;
       padding-left: 95px;
       padding-bottom: 32px;
+      font-style: normal;
       font-weight: 500;
       font-size: 48px;
       line-height: 48px;
+      margin-top: 135px;
     }
-    p{
+    p {
       width: 445px;
       height: 104px;
-      padding-bottom: 191px;
-      padding-left: 95px;
+      margin-bottom: 161px;
+      margin-left: 95px;
+      margin-right: 100px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
     }
-  } 
-  
-  button {
-    padding: 17px 47px 17px 48px;
-    background-color: $white;
-    border-radius: 8px;
-    border: none;
+  }
+
+  form {
+    label {
+      opacity: 0.5;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 26px;
+    }
+    input {
+      width: 380px;
+      margin-bottom: 25px;
+      border: none;
+      border-bottom: 1px solid $white;
+      background-color: rgba(255, 255, 255, 0);
+      &:focus {
+        outline: none;
+      }
+      color: $white;
+    }
+    textarea {
+      width: 380px;
+      border: none;
+      border-bottom: 1px solid $white;
+      background-color: rgba(255, 255, 255, 0);
+      resize: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      padding: 17px 47px 17px 48px;
+      margin-left: 228px;
+      margin-right: 96px;
+      margin-top: 24px;
+      background-color: $white;
+      border-radius: 8px;
+      border: none;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
   }
 }
 .footer__contact {
