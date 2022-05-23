@@ -1320,6 +1320,9 @@ body .section__solutions div .solutions__img {
   font-size: 15px;
   line-height: 26px;
 }
+.section__form form label:hover {
+  opacity: 1;
+}
 
 input {
   width: 380px;
