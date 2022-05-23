@@ -4,26 +4,46 @@
 }
 
 body {
+  @media screen and(max-width: 375px) {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+  }
   font-family: "Jost";
   max-width: 1440px;
   max-height: 2940px;
   margin: auto;
 
   header {
+    @media screen and(max-width: 375px) {
+      
+    }
     display: flex;
     justify-content: space-between;
     width: 1111px;
     margin: 65px auto;
     text-transform: uppercase;
+    
 
     img {
+      @media screen and(max-width: 375px) {
+        display: flex;
+        margin-left: 24px;
+      }
       max-width: 197px;
       max-height: 27px;
       align-self: center;
     }
 
     nav {
+      @media (max-width: 375px) {
+      width: 327px;
+      margin: 0 auto;
+      }
       ul {
+        @media (max-width: 375px) {
+          display: none;
+        }
         display: flex;
         gap: 42px;
 
@@ -51,19 +71,32 @@ body {
   }
 
   main {
+    @media (max-width: 375px) {
+      
+    }
     position: relative;
     .section__rectangle {
+      @media (max-width: 375px) {
+      display: none;
+      }
       position: absolute;
       z-index: -1;
       margin-top: 350px;
     }
     .section__rectangle__upsidedown {
+      @media (max-width: 375px) {
+      display: none;
+      }
       position: absolute;
       z-index: -1;
       margin-top: 1700px;
       margin-left: 440px;
     }
     .section__services {
+      @media (max-width: 375px) {
+      width: 375px;
+      height: 843px;
+      }
       background-color: $pink;
       background-image: url("../img/rond2.png");
       background-repeat: no-repeat;
@@ -145,6 +178,10 @@ body {
     }
 
     .section__projects {
+      @media (max-width: 375px) {
+      width: 327px;
+      grid-template-areas: "a" "b" "c";
+      }
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
@@ -259,6 +296,11 @@ body {
     }
 
     .section__values {
+      @media (max-width: 375px) {
+      width: 327px;
+      display: flex;
+      flex-direction: column;
+      }
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -309,11 +351,19 @@ body {
   }
 
   footer {
+    @media screen and(max-width: 375px) {
+     width: 375px;
+     height: 1005px; 
+    }
     position: relative;
     z-index: auto;
     height: 393px;
 
     .section__contact {
+      @media screen and(max-width: 375px) {
+      width:327px;
+      height: 379px;
+      }
       display: flex;
       align-items: center;
       justify-content: space-between;

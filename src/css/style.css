@@ -12,6 +12,18 @@ body {
   max-height: 2940px;
   margin: auto;
 }
+@media screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 body header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,11 +41,30 @@ body header img {
   -ms-flex-item-align: center;
       align-self: center;
 }
+@media screen and (max-width: 375px) {
+  body header img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 24px;
+  }
+}
+@media (max-width: 375px) {
+  body header nav {
+    width: 327px;
+    margin: 0 auto;
+  }
+}
 body header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 42px;
+}
+@media (max-width: 375px) {
+  body header nav ul {
+    display: none;
+  }
 }
 body header nav ul li {
   display: inline-block;
@@ -61,11 +92,21 @@ body main .section__rectangle {
   z-index: -1;
   margin-top: 350px;
 }
+@media (max-width: 375px) {
+  body main .section__rectangle {
+    display: none;
+  }
+}
 body main .section__rectangle__upsidedown {
   position: absolute;
   z-index: -1;
   margin-top: 1700px;
   margin-left: 440px;
+}
+@media (max-width: 375px) {
+  body main .section__rectangle__upsidedown {
+    display: none;
+  }
 }
 body main .section__services {
   background-color: rgb(231, 129, 107);
@@ -86,6 +127,12 @@ body main .section__services {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 375px) {
+  body main .section__services {
+    width: 375px;
+    height: 843px;
+  }
 }
 body main .section__services article {
   position: relative;
@@ -155,6 +202,12 @@ body main .section__projects {
   gap: 24px 30px;
   margin: 0 auto 160px;
   width: 1111px;
+}
+@media (max-width: 375px) {
+  body main .section__projects {
+    width: 327px;
+    grid-template-areas: "a" "b" "c";
+  }
 }
 body main .section__projects .projects__web {
   grid-area: a;
@@ -334,6 +387,18 @@ body main .section__values {
   color: rgb(51, 49, 54);
   width: 1110px;
 }
+@media (max-width: 375px) {
+  body main .section__values {
+    width: 327px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 body main .section__values .values__passion, body main .section__values .values__friendly, body main .section__values .values__resourceful {
   font-size: small;
   text-align: center;
@@ -364,6 +429,12 @@ body footer {
   z-index: auto;
   height: 393px;
 }
+@media screen and (max-width: 375px) {
+  body footer {
+    width: 375px;
+    height: 1005px;
+  }
+}
 body footer .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,6 +453,12 @@ body footer .section__contact {
   margin: 0 auto -101px;
   position: relative;
   z-index: 1;
+}
+@media screen and (max-width: 375px) {
+  body footer .section__contact {
+    width: 327px;
+    height: 379px;
+  }
 }
 body footer .section__contact div {
   margin-left: 95px;
@@ -542,17 +619,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
-  body {
-    max-width: 375px;
-  }
-}
-@media screen and (max-width: 375px) {
-  body header nav {
-    display: none;
-  }
-}
-body .section__solutions__design {
+.section__solutions__design {
   color: rgb(255, 255, 255);
   width: 1111px;
   height: 252px;
@@ -568,17 +635,19 @@ body .section__solutions__design {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 375px) {
-  body .section__solutions__design {
-    width: 292px;
-    height: 292px;
+@media (max-width: 375px) {
+  .section__solutions__design {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
-body .section__solutions__design div {
+.section__solutions__design div {
   margin-left: 190px;
   margin-right: 191px;
 }
-body .section__solutions__design div h2 {
+.section__solutions__design div h2 {
   height: 48px;
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -588,7 +657,7 @@ body .section__solutions__design div h2 {
   margin-bottom: 24px;
   text-align: center;
 }
-body .section__solutions__design div p {
+.section__solutions__design div p {
   height: 52px;
   width: 730px;
   font-family: "Jost", sans-serif;
@@ -598,7 +667,8 @@ body .section__solutions__design div p {
   line-height: 26px;
   text-align: center;
 }
-body .section__tech {
+
+.section__tech {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,26 +679,26 @@ body .section__tech {
   width: 1110px;
   height: 988px;
 }
-@media screen and (max-width: 375px) {
-  body .section__tech {
-    width: 327px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media (max-width: 375px) {
+  .section__tech {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 }
-body .section__tech .tech__div {
+.section__tech .tech__div {
   width: 350px;
   height: 478px;
   text-align: center;
   background-color: rgb(253, 243, 240);
   border-radius: 15px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
-body .section__tech .tech__div h2 {
+.section__tech .tech__div h2 {
   margin-top: 30px;
   margin-bottom: 16px;
   color: rgb(231, 129, 107);
@@ -638,42 +708,30 @@ body .section__tech .tech__div h2 {
   font-size: 20px;
   line-height: 26px;
 }
-body .section__tech .tech__div p {
-  margin: 0 auto;
-  width: 286px;
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-}
-body .section__tech .tech__div:hover {
-  background-color: rgb(231, 129, 107);
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-}
-body .section__tech .tech__div:hover h2 {
+.section__tech .tech__div h2 {
   color: rgb(255, 255, 255);
 }
-body .projects__graphic__design {
+
+.projects__graphic__design {
   background-color: rgb(231, 129, 107);
   border-radius: 15px;
   width: 541px;
   height: 308px;
 }
-@media screen and (max-width: 375px) {
-  body .projects__graphic__design {
+@media (max-width: 375px) {
+  .projects__graphic__design {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 327px;
   }
 }
-body .projects__graphic__design a {
+.projects__graphic__design a {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -684,12 +742,12 @@ body .projects__graphic__design a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-body .projects__graphic__design a .projects__graphic__design__img {
+.projects__graphic__design a .projects__graphic__design__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-body .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text {
+.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -706,7 +764,129 @@ body .projects__graphic__design a .projects__graphic__design__img .projects__gra
       -ms-flex-align: center;
           align-items: center;
 }
-body .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
+.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
+  width: 400px;
+  text-align: center;
+}
+.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text p {
+  height: 52px;
+  width: 730px;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+.projects__graphic__design a .section__tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto 192px;
+  width: 1110px;
+  height: 988px;
+}
+@media screen and (max-width: 375px) {
+  .projects__graphic__design a .section__tech {
+    width: 327px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.projects__graphic__design a .section__tech .tech__div {
+  width: 350px;
+  height: 478px;
+  text-align: center;
+  background-color: rgb(253, 243, 240);
+  border-radius: 15px;
+}
+.projects__graphic__design a .section__tech .tech__div h2 {
+  margin-top: 30px;
+  margin-bottom: 16px;
+  color: rgb(231, 129, 107);
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.projects__graphic__design a .section__tech .tech__div p {
+  margin: 0 auto;
+  width: 286px;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.projects__graphic__design a .section__tech .tech__div:hover {
+  background-color: rgb(231, 129, 107);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.projects__graphic__design a .section__tech .tech__div:hover h2 {
+  color: rgb(255, 255, 255);
+}
+.projects__graphic__design a .projects__graphic__design {
+  background-color: rgb(231, 129, 107);
+  border-radius: 15px;
+  width: 541px;
+  height: 308px;
+}
+@media screen and (max-width: 375px) {
+  .projects__graphic__design a .projects__graphic__design {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 327px;
+  }
+}
+.projects__graphic__design a .projects__graphic__design a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.projects__graphic__design a .projects__graphic__design a .projects__graphic__design__img {
+  position: relative;
+  width: 541px;
+  height: 308px;
+}
+.projects__graphic__design a .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects__graphic__design a .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
   width: 400px;
   text-align: center;
   font-family: "Jost", sans-serif;
@@ -719,21 +899,21 @@ body .projects__graphic__design a .projects__graphic__design__img .projects__gra
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-body .projects__graphic__design a:hover img {
+.projects__graphic__design a .projects__graphic__design a:hover img {
   opacity: 0.5;
 }
-body .projects__app__design {
+.projects__graphic__design a .projects__app__design {
   background-color: rgb(231, 129, 107);
   border-radius: 15px;
   width: 541px;
   height: 308px;
 }
-body .projects__app__design a .projects__app__design__img {
+.projects__graphic__design a .projects__app__design a .projects__app__design__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-body .projects__app__design a .projects__app__design__img .projects__app__design__text {
+.projects__graphic__design a .projects__app__design a .projects__app__design__img .projects__app__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -750,7 +930,7 @@ body .projects__app__design a .projects__app__design__img .projects__app__design
       -ms-flex-align: center;
           align-items: center;
 }
-body .projects__app__design a .projects__app__design__img .projects__app__design__text h1 {
+.projects__graphic__design a .projects__app__design a .projects__app__design__img .projects__app__design__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -761,7 +941,7 @@ body .projects__app__design a .projects__app__design__img .projects__app__design
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-body .projects__app__design a .projects__app__design__img .projects__app__design__text p {
+.projects__graphic__design a .projects__app__design a .projects__app__design__img .projects__app__design__text p {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -772,16 +952,16 @@ body .projects__app__design a .projects__app__design__img .projects__app__design
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-body .projects__app__design a:hover img {
+.projects__graphic__design a .projects__app__design a:hover img {
   opacity: 0.5;
 }
-body .projects__web__design {
+.projects__graphic__design a .projects__web__design {
   background-color: rgb(231, 129, 107);
   border-radius: 15px;
   width: 541px;
   height: 308px;
 }
-body .projects__web__design a {
+.projects__graphic__design a .projects__web__design a {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -792,17 +972,17 @@ body .projects__web__design a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-body .projects__web__design a .projects__web__design__img {
+.projects__graphic__design a .projects__web__design a .projects__web__design__img {
   position: relative;
 }
-body .projects__web__design a .projects__web__design__img .web {
+.projects__graphic__design a .projects__web__design a .projects__web__design__img .web {
   width: 541px;
   height: 308px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
 }
-body .projects__web__design a .projects__web__design__img .projects__web__design__text {
+.projects__graphic__design a .projects__web__design a .projects__web__design__img .projects__web__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -819,7 +999,7 @@ body .projects__web__design a .projects__web__design__img .projects__web__design
       -ms-flex-align: center;
           align-items: center;
 }
-body .projects__web__design a .projects__web__design__img .projects__web__design__text h1 {
+.projects__graphic__design a .projects__web__design a .projects__web__design__img .projects__web__design__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -830,7 +1010,7 @@ body .projects__web__design a .projects__web__design__img .projects__web__design
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-body .projects__web__design a:hover img {
+.projects__graphic__design a .projects__web__design a:hover img {
   opacity: 0.5;
 }
 
