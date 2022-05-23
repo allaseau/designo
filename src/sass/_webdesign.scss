@@ -294,15 +294,30 @@ body {
       border-radius: 15px;
       width: 541px;
       height: 308px;
+      @media (max-width: 375px) {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 327px;
+        height: 250px;
+      }
       a {
         @include projectsA;
         .projects__web__design__img {
           position: relative;
+          @media (max-width: 375px) {
+            width: 327px;
+            height: 250px;
+          }
           .web {
             width: 541px;
             height: 308px;
             object-fit: cover;
             border-radius: 15px;
+            @media (max-width: 375px) {
+              width: 327px;
+              height: 250px;
+            }
           }
           .projects__web__design__text {
             position: absolute;
@@ -313,6 +328,16 @@ body {
 
             h1 {
               @include projectsH;
+              @media (max-width: 375px) {
+                width: 215px;
+                font-family: $fontJ;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 36px;
+                text-align: center;
+                letter-spacing: 1.4px;
+              }
             }
             p {
               @include projectsA;
