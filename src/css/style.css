@@ -1590,6 +1590,8 @@ button:hover {
     width: 375px;
     height: 764px;
     border-radius: 0px;
+    padding: 0;
+    margin-bottom: 192px;
   }
   body .section__form div {
     text-align: center;
