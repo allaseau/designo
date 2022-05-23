@@ -1,267 +1,307 @@
-.section__solutions__design {
-  color: $white;
-  width: 1111px;
-  height: 252px;
-  background-image: url("../img/Oval.png");
-  background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 160px;
-  display: flex;
-  align-items: center;
-  @media (max-width: 375px) {
-    flex-direction: column;
-  }
-  div {
-    margin-left: 190px;
-    margin-right: 191px;
-    h2 {
-      height: 48px;
-      font-family: $fontJ;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 48px;
-      line-height: 48px;
-      margin-bottom: 24px;
-      text-align: center;
-    }
-    p {
-      height: 52px;
-      width: 730px;
-      font-family: $fontJ;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      text-align: center;
-    }
-  }
-}
-.section__tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin: 0 auto 192px;
-  width: 1110px;
-  height: 988px;
-  @media (max-width: 375px) {
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-  .tech__div {
-    width: 350px;
-    height: 478px;
-    text-align: center;
-    background-color: $pinkBg;
-    border-radius: 15px;
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 16px;
-      color: $pink;
-      font-family: $fontJ;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 26px;
-    }
+body {
+  .section__solutions__design {
     color: $white;
-    cursor: pointer;
-    h2 {
+    width: 1111px;
+    height: 252px;
+    background-image: url("../img/Oval.png");
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 160px;
+    display: flex;
+    align-items: center;
+
+    div {
+      margin-left: 190px;
+      margin-right: 191px;
+      h2 {
+        height: 48px;
+        font-family: $fontJ;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+      p {
+        height: 52px;
+        width: 730px;
+        font-family: $fontJ;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+      }
+    }
+  }
+  .section__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto 192px;
+    width: 1110px;
+    height: 988px;
+
+    .tech__div {
+      width: 350px;
+      height: 478px;
+      text-align: center;
+      background-color: $pinkBg;
+      border-radius: 15px;
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 16px;
+        color: $pink;
+        font-family: $fontJ;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+      }
       color: $white;
+      cursor: pointer;
+      h2 {
+        color: $white;
+      }
+    }
+  }
+  .projects__graphic__design {
+    background-color: $pink;
+    border-radius: 15px;
+    width: 541px;
+    height: 308px;
+
+    a {
+      @include projectsA;
+      .projects__graphic__design__img {
+        position: relative;
+        width: 541px;
+        height: 308px;
+
+        .projects__graphic__design__text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          @include projectsT;
+
+          h1 {
+            width: 400px;
+            text-align: center;
+          }
+          p {
+            height: 52px;
+            width: 730px;
+            font-family: $fontJ;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+          }
+        }
+      }
+      .section__tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 auto 192px;
+        width: 1110px;
+        height: 988px;
+        .tech__div {
+          width: 350px;
+          height: 478px;
+          text-align: center;
+          background-color: $pinkBg;
+          border-radius: 15px;
+          h2 {
+            margin-top: 30px;
+            margin-bottom: 16px;
+            color: $pink;
+            font-family: $fontJ;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+          }
+          p {
+            margin: 0 auto;
+            width: 286px;
+            font-family: $fontJ;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+        .tech__div:hover {
+          background-color: $pink;
+          color: $white;
+          cursor: pointer;
+          h2 {
+            color: $white;
+          }
+        }
+      }
+      .projects__graphic__design {
+        background-color: $pink;
+        border-radius: 15px;
+        width: 541px;
+        height: 308px;
+
+        a {
+          @include projectsA;
+          .projects__graphic__design__img {
+            position: relative;
+            width: 541px;
+            height: 308px;
+
+            .projects__graphic__design__text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              @include projectsT;
+
+              h1 {
+                width: 400px;
+                text-align: center;
+                @include projectsH;
+              }
+            }
+          }
+        }
+        a:hover {
+          img {
+            opacity: 0.5;
+          }
+        }
+      }
+      .projects__app__design {
+        background-color: $pink;
+        border-radius: 15px;
+        width: 541px;
+        height: 308px;
+        a {
+          .projects__app__design__img {
+            position: relative;
+            width: 541px;
+            height: 308px;
+
+            .projects__app__design__text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              @include projectsT;
+
+              h1 {
+                @include projectsH;
+              }
+              p {
+                @include projectsA;
+              }
+            }
+          }
+        }
+        a:hover {
+          img {
+            opacity: 0.5;
+          }
+        }
+      }
+      .projects__web__design {
+        background-color: $pink;
+        border-radius: 15px;
+        width: 541px;
+        height: 308px;
+        a {
+          @include projectsA;
+          .projects__web__design__img {
+            position: relative;
+            .web {
+              width: 541px;
+              height: 308px;
+              object-fit: cover;
+              border-radius: 15px;
+            }
+            .projects__web__design__text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              @include projectsT;
+
+              h1 {
+                @include projectsH;
+              }
+            }
+          }
+        }
+        a:hover {
+          img {
+            opacity: 0.5;
+          }
+        }
+      }
     }
   }
 }
-.projects__graphic__design {
-  background-color: $pink;
-  border-radius: 15px;
-  width: 541px;
-  height: 308px;
-  @media (max-width: 375px) {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-  a {
-    @include projectsA;
-    .projects__graphic__design__img {
-      position: relative;
-      width: 541px;
-      height: 308px;
 
-      .projects__graphic__design__text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        @include projectsT;
-
-        h1 {
-          width: 400px;
+@media screen and(max-width:375px) {
+  body {
+    header {
+      img {
+        width: 375px;
+      }
+      nav {
+        display: none;
+      }
+    }
+    .section__solutions__design {
+      width: 375px;
+      height: 320px;
+      background-color: $pink;
+      background-image: none;
+      div {
+        margin-left: 24px;
+        margin-right: 24px;
+        h2 {
+          font-family: $fontJ;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 36px;
           text-align: center;
+          width: 327px;
+          height: 36px;
         }
         p {
-          height: 52px;
-          width: 730px;
           font-family: $fontJ;
           font-style: normal;
           font-weight: 400;
-          font-size: 16px;
-          line-height: 26px;
+          font-size: 15px;
+          line-height: 25px;
           text-align: center;
+          width: 327px;
+          height: 50px;
+          br {
+            display: none;
+          }
         }
       }
     }
     .section__tech {
-      @media screen and(max-width: 375px) {
-        width: 327px;
-        display: flex;
-        flex-direction: column;
-      }
       display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin: 0 auto 192px;
-      width: 1110px;
-      height: 988px;
-      .tech__div {
-        width: 350px;
-        height: 478px;
-        text-align: center;
-        background-color: $pinkBg;
-        border-radius: 15px;
-        h2 {
-          margin-top: 30px;
-          margin-bottom: 16px;
-          color: $pink;
-          font-family: $fontJ;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 26px;
-        }
-        p {
-          margin: 0 auto;
-          width: 286px;
-          font-family: $fontJ;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 26px;
-        }
-      }
-      .tech__div:hover {
-        background-color: $pink;
-        color: $white;
-        cursor: pointer;
-        h2 {
-          color: $white;
-        }
-      }
+      flex-direction: column;
+      flex-wrap: nowrap;
     }
-    .projects__graphic__design {
-      background-color: $pink;
-      border-radius: 15px;
-      width: 541px;
-      height: 308px;
-      @media screen and(max-width: 375px) {
-        display: flex;
-        flex-direction: column;
-        width: 327px;
-      }
-      a {
-        @include projectsA;
-        .projects__graphic__design__img {
-          position: relative;
-          width: 541px;
-          height: 308px;
-
-          .projects__graphic__design__text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            @include projectsT;
-
-            h1 {
-              width: 400px;
-              text-align: center;
-              @include projectsH;
-            }
-          }
-        }
-      }
-      a:hover {
-        img {
-          opacity: 0.5;
-        }
-      }
-    }
-    .projects__app__design {
-      background-color: $pink;
-      border-radius: 15px;
-      width: 541px;
-      height: 308px;
-      a {
-        .projects__app__design__img {
-          position: relative;
-          width: 541px;
-          height: 308px;
-
-          .projects__app__design__text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            @include projectsT;
-
-            h1 {
-              @include projectsH;
-            }
-            p {
-              @include projectsA;
-            }
-          }
-        }
-      }
-      a:hover {
-        img {
-          opacity: 0.5;
-        }
-      }
-    }
-    .projects__web__design {
-      background-color: $pink;
-      border-radius: 15px;
-      width: 541px;
-      height: 308px;
-      a {
-        @include projectsA;
-        .projects__web__design__img {
-          position: relative;
-          .web {
-            width: 541px;
-            height: 308px;
-            object-fit: cover;
-            border-radius: 15px;
-          }
-          .projects__web__design__text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            @include projectsT;
-
-            h1 {
-              @include projectsH;
-            }
-          }
-        }
-      }
-      a:hover {
-        img {
-          opacity: 0.5;
-        }
-      }
+    .section__projects {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
     }
   }
 }
