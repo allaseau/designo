@@ -1151,6 +1151,9 @@ body .section__solutions div .solutions__img {
   display: -ms-flexbox;
   display: flex;
   background-color: rgb(231, 129, 107);
+  background-image: url("../img/rond.png");
+  background-repeat: no-repeat;
+  background-size: 660px 520px;
   border-radius: 20px;
   color: rgb(255, 255, 255);
   width: 1111px;
@@ -1209,6 +1212,7 @@ textarea {
   border-bottom: 1px solid rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0);
   resize: none;
+  color: rgb(255, 255, 255);
 }
 textarea:focus {
   outline: none;

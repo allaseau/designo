@@ -1,6 +1,9 @@
 .section__form {
   display: flex;
   background-color: $pink;
+  background-image: url("../img/rond.png");
+  background-repeat: no-repeat;
+  background-size: 660px 520px;
   border-radius: 20px;
   color: $white;
   width: 1111px;
@@ -40,51 +43,52 @@
       font-weight: 500;
       font-size: 15px;
       line-height: 26px;
-      }
     }
-    }
-    input {
-      width: 380px;
-      margin-bottom: 25px;
-      border: none;
-      border-bottom: 1px solid $white;
-      background-color: rgba(255, 255, 255, 0);
-      &:focus {
-        outline: none;
-      }
-      color: $white;
-    }
-    textarea {
-      width: 380px;
-      border: none;
-      border-bottom: 1px solid $white;
-      background-color: rgba(255, 255, 255, 0);
-      resize: none;
-      &:focus {
-        outline: none;
-      }
-    }
-    button {
-      padding: 17px 47px 17px 48px;
-      margin-left: 228px;
-      margin-right: 96px;
-      margin-top: 24px;
-      background-color: $white;
-      border-radius: 8px;
-      border: none;
-      text-transform: uppercase;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 22px;
-      text-align: center;
-      letter-spacing: 1px;
-    }
-    button:hover{
-      background-color: $peach;
-      color: $white;
-      cursor: pointer;
-    }
+  }
+}
+input {
+  width: 380px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid $white;
+  background-color: rgba(255, 255, 255, 0);
+  &:focus {
+    outline: none;
+  }
+  color: $white;
+}
+textarea {
+  width: 380px;
+  border: none;
+  border-bottom: 1px solid $white;
+  background-color: rgba(255, 255, 255, 0);
+  resize: none;
+  &:focus {
+    outline: none;
+  }
+  color: $white;
+}
+button {
+  padding: 17px 47px 17px 48px;
+  margin-left: 228px;
+  margin-right: 96px;
+  margin-top: 24px;
+  background-color: $white;
+  border-radius: 8px;
+  border: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+button:hover {
+  background-color: $peach;
+  color: $white;
+  cursor: pointer;
+}
 .footer__contact {
   height: 321px;
 }
