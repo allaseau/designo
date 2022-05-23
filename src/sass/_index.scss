@@ -16,14 +16,12 @@ body {
 
   header {
     @media screen and(max-width: 375px) {
-      
     }
     display: flex;
     justify-content: space-between;
     width: 1111px;
     margin: 65px auto;
     text-transform: uppercase;
-    
 
     img {
       @media screen and(max-width: 375px) {
@@ -37,8 +35,8 @@ body {
 
     nav {
       @media (max-width: 375px) {
-      width: 327px;
-      margin: 0 auto;
+        width: 327px;
+        margin: 0 auto;
       }
       ul {
         @media (max-width: 375px) {
@@ -72,12 +70,11 @@ body {
 
   main {
     @media (max-width: 375px) {
-      
     }
     position: relative;
     .section__rectangle {
       @media (max-width: 375px) {
-      display: none;
+        display: none;
       }
       position: absolute;
       z-index: -1;
@@ -85,7 +82,7 @@ body {
     }
     .section__rectangle__upsidedown {
       @media (max-width: 375px) {
-      display: none;
+        display: none;
       }
       position: absolute;
       z-index: -1;
@@ -94,8 +91,8 @@ body {
     }
     .section__services {
       @media (max-width: 375px) {
-      width: 375px;
-      height: 843px;
+        width: 375px;
+        height: 843px;
       }
       background-color: $pink;
       background-image: url("../img/rond2.png");
@@ -179,8 +176,8 @@ body {
 
     .section__projects {
       @media (max-width: 375px) {
-      width: 327px;
-      grid-template-areas: "a" "b" "c";
+        width: 327px;
+        grid-template-areas: "a" "b" "c";
       }
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -297,9 +294,9 @@ body {
 
     .section__values {
       @media (max-width: 375px) {
-      width: 327px;
-      display: flex;
-      flex-direction: column;
+        width: 327px;
+        display: flex;
+        flex-direction: column;
       }
       display: flex;
       flex-direction: row;
@@ -352,8 +349,8 @@ body {
 
   footer {
     @media screen and(max-width: 375px) {
-     width: 375px;
-     height: 1005px; 
+      width: 375px;
+      height: 1005px;
     }
     position: relative;
     z-index: auto;
@@ -361,8 +358,8 @@ body {
 
     .section__contact {
       @media screen and(max-width: 375px) {
-      width:327px;
-      height: 379px;
+        width: 327px;
+        height: 379px;
       }
       display: flex;
       align-items: center;
