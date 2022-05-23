@@ -1177,6 +1177,21 @@ body .section__projects .projects__web__design {
   width: 541px;
   height: 308px;
 }
+@media (max-width: 375px) {
+  body .section__projects .projects__web__design {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 327px;
+    height: 250px;
+  }
+}
 body .section__projects .projects__web__design a {
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -1191,12 +1206,24 @@ body .section__projects .projects__web__design a {
 body .section__projects .projects__web__design a .projects__web__design__img {
   position: relative;
 }
+@media (max-width: 375px) {
+  body .section__projects .projects__web__design a .projects__web__design__img {
+    width: 327px;
+    height: 250px;
+  }
+}
 body .section__projects .projects__web__design a .projects__web__design__img .web {
   width: 541px;
   height: 308px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
+}
+@media (max-width: 375px) {
+  body .section__projects .projects__web__design a .projects__web__design__img .web {
+    width: 327px;
+    height: 250px;
+  }
 }
 body .section__projects .projects__web__design a .projects__web__design__img .projects__web__design__text {
   position: absolute;
@@ -1226,6 +1253,18 @@ body .section__projects .projects__web__design a .projects__web__design__img .pr
   text-transform: uppercase;
   margin-bottom: 24px;
 }
+@media (max-width: 375px) {
+  body .section__projects .projects__web__design a .projects__web__design__img .projects__web__design__text h1 {
+    width: 215px;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 1.4px;
+  }
+}
 body .section__projects .projects__web__design a .projects__web__design__img .projects__web__design__text p {
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -1244,6 +1283,12 @@ body .section__projects .projects__web__design a:hover img {
 body {
   width: 1440px;
 }
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+    height: 8000px;
+  }
+}
 body .section__aboutUs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1251,6 +1296,18 @@ body .section__aboutUs {
   margin: 0 auto 160px;
   width: 1111px;
   height: 480px;
+}
+@media screen and (max-width: 375px) {
+  body .section__aboutUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 375px;
+  }
 }
 body .section__aboutUs div {
   background-color: rgb(231, 129, 107);
@@ -1273,6 +1330,14 @@ body .section__aboutUs div h1 {
   margin-bottom: 24px;
   width: 445px;
 }
+@media screen and (max-width: 375px) {
+  body .section__aboutUs div h1 {
+    width: 327px;
+    height: 36px;
+    text-align: center;
+    margin-left: 24px;
+  }
+}
 body .section__aboutUs div p {
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -1282,11 +1347,25 @@ body .section__aboutUs div p {
   width: 445px;
   margin: auto;
 }
-body .section__aboutUs div .solutions__img {
+@media screen and (max-width: 375px) {
+  body .section__aboutUs div p {
+    width: 327px;
+    height: 175px;
+    text-align: center;
+    margin-left: 24px;
+  }
+}
+body .section__aboutUs div .section__aboutUs__img {
   width: 476px;
   height: 480px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+@media screen and (max-width: 375px) {
+  body .section__aboutUs div .section__aboutUs__img {
+    height: 320px;
+    width: 375px;
+  }
 }
 body .section__skills {
   display: -webkit-box;
@@ -1295,6 +1374,18 @@ body .section__skills {
   margin: 0 auto 160px;
   width: 1111px;
   height: 640px;
+}
+@media screen and (max-width: 375px) {
+  body .section__skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 375px;
+  }
 }
 body .section__skills div {
   background-color: rgb(253, 243, 240);
@@ -1315,6 +1406,14 @@ body .section__skills div h1 {
   width: 445px;
   color: rgb(231, 129, 107);
 }
+@media screen and (max-width: 375px) {
+  body .section__skills div h1 {
+    width: 327px;
+    height: 36px;
+    text-align: center;
+    margin-left: 24px;
+  }
+}
 body .section__skills div p {
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -1324,11 +1423,25 @@ body .section__skills div p {
   width: 445px;
   margin: auto;
 }
-body .section__skills div .solutions__img {
+@media screen and (max-width: 375px) {
+  body .section__skills div p {
+    width: 327px;
+    height: 325px;
+    text-align: center;
+    margin-left: 24px;
+  }
+}
+body .section__skills div .section__skills__img {
   width: 476px;
   height: 640px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+@media screen and (max-width: 375px) {
+  body .section__skills div .section__skills__img {
+    height: 320px;
+    width: 375px;
+  }
 }
 body .section__location {
   display: -webkit-box;
@@ -1398,6 +1511,18 @@ body .section__solutions {
   width: 1111px;
   height: 640px;
 }
+@media screen and (max-width: 375px) {
+  body .section__solutions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 375px;
+  }
+}
 body .section__solutions div {
   background-color: rgb(253, 243, 240);
   color: rgb(51, 49, 54);
@@ -1417,6 +1542,14 @@ body .section__solutions div h1 {
   width: 445px;
   color: rgb(231, 129, 107);
 }
+@media screen and (max-width: 375px) {
+  body .section__solutions div h1 {
+    width: 327px;
+    height: 36px;
+    text-align: center;
+    margin-left: 24px;
+  }
+}
 body .section__solutions div p {
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -1426,11 +1559,25 @@ body .section__solutions div p {
   width: 445px;
   margin: auto;
 }
+@media screen and (max-width: 375px) {
+  body .section__solutions div p {
+    width: 327px;
+    height: 300px;
+    text-align: center;
+    margin-left: 24px;
+  }
+}
 body .section__solutions div .solutions__img {
   width: 476px;
   height: 640px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+@media screen and (max-width: 375px) {
+  body .section__solutions div .solutions__img {
+    height: 320px;
+    width: 375px;
+  }
 }
 
 body {
