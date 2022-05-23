@@ -619,7 +619,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   cursor: pointer;
 }
 
-body .section__solutions__design {
+.section__solutions__design {
   color: rgb(255, 255, 255);
   width: 1111px;
   height: 252px;
@@ -635,11 +635,19 @@ body .section__solutions__design {
       -ms-flex-align: center;
           align-items: center;
 }
-body .section__solutions__design div {
+@media (max-width: 375px) {
+  .section__solutions__design {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.section__solutions__design div {
   margin-left: 190px;
   margin-right: 191px;
 }
-body .section__solutions__design div h2 {
+.section__solutions__design div h2 {
   height: 48px;
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -649,7 +657,7 @@ body .section__solutions__design div h2 {
   margin-bottom: 24px;
   text-align: center;
 }
-body .section__solutions__design div p {
+.section__solutions__design div p {
   height: 52px;
   width: 730px;
   font-family: "Jost", sans-serif;
@@ -659,7 +667,8 @@ body .section__solutions__design div p {
   line-height: 26px;
   text-align: center;
 }
-body .section__tech {
+
+.section__tech {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,16 +679,24 @@ body .section__tech {
   width: 1110px;
   height: 988px;
 }
-body .section__tech .tech__div {
+@media (max-width: 375px) {
+  .section__tech {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.section__tech .tech__div {
   width: 350px;
   height: 478px;
   text-align: center;
   background-color: rgb(253, 243, 240);
   border-radius: 15px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
 }
-body .section__tech .tech__div h2 {
+.section__tech .tech__div h2 {
   margin-top: 30px;
   margin-bottom: 16px;
   color: rgb(231, 129, 107);
@@ -689,91 +706,7 @@ body .section__tech .tech__div h2 {
   font-size: 20px;
   line-height: 26px;
 }
-body .section__tech .tech__div h2 {
-  color: rgb(255, 255, 255);
-}
-body .projects__graphic__design {
-  background-color: rgb(231, 129, 107);
-  border-radius: 15px;
-  width: 541px;
-  height: 308px;
-}
-body .projects__graphic__design a {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-body .projects__graphic__design a .projects__graphic__design__img {
-  position: relative;
-  width: 541px;
-  height: 308px;
-}
-body .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-body .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
-  width: 400px;
-  text-align: center;
-}
-body .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text p {
-  height: 52px;
-  width: 730px;
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-}
-body .projects__graphic__design a .section__tech {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-  margin: 0 auto 192px;
-  width: 1110px;
-  height: 988px;
-}
-body .projects__graphic__design a .section__tech .tech__div {
-  width: 350px;
-  height: 478px;
-  text-align: center;
-  background-color: rgb(253, 243, 240);
-  border-radius: 15px;
-}
-body .projects__graphic__design a .section__tech .tech__div h2 {
-  margin-top: 30px;
-  margin-bottom: 16px;
-  color: rgb(231, 129, 107);
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
-}
-body .projects__graphic__design a .section__tech .tech__div p {
+.section__tech .tech__div p {
   margin: 0 auto;
   width: 286px;
   font-family: "Jost", sans-serif;
@@ -782,21 +715,35 @@ body .projects__graphic__design a .section__tech .tech__div p {
   font-size: 16px;
   line-height: 26px;
 }
-body .projects__graphic__design a .section__tech .tech__div:hover {
+.section__tech .tech__div:hover {
   background-color: rgb(231, 129, 107);
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-body .projects__graphic__design a .section__tech .tech__div:hover h2 {
+.section__tech .tech__div:hover h2 {
   color: rgb(255, 255, 255);
 }
-body .projects__graphic__design a .projects__graphic__design {
+
+.projects__graphic__design {
   background-color: rgb(231, 129, 107);
   border-radius: 15px;
   width: 541px;
   height: 308px;
 }
-body .projects__graphic__design a .projects__graphic__design a {
+@media (max-width: 375px) {
+  .projects__graphic__design {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.projects__graphic__design a {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -807,12 +754,12 @@ body .projects__graphic__design a .projects__graphic__design a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-body .projects__graphic__design a .projects__graphic__design a .projects__graphic__design__img {
+.projects__graphic__design a .projects__graphic__design__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-body .projects__graphic__design a .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text {
+.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -829,7 +776,7 @@ body .projects__graphic__design a .projects__graphic__design a .projects__graphi
       -ms-flex-align: center;
           align-items: center;
 }
-body .projects__graphic__design a .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
+.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
   width: 400px;
   text-align: center;
   font-family: "Jost", sans-serif;
@@ -842,21 +789,22 @@ body .projects__graphic__design a .projects__graphic__design a .projects__graphi
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-body .projects__graphic__design a .projects__graphic__design a:hover img {
+.projects__graphic__design a:hover img {
   opacity: 0.5;
 }
-body .projects__graphic__design a .projects__app__design {
+
+.projects__app__design {
   background-color: rgb(231, 129, 107);
   border-radius: 15px;
   width: 541px;
   height: 308px;
 }
-body .projects__graphic__design a .projects__app__design a .projects__app__design__img {
+.projects__app__design a .projects__app__design__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-body .projects__graphic__design a .projects__app__design a .projects__app__design__img .projects__app__design__text {
+.projects__app__design a .projects__app__design__img .projects__app__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -873,7 +821,7 @@ body .projects__graphic__design a .projects__app__design a .projects__app__desig
       -ms-flex-align: center;
           align-items: center;
 }
-body .projects__graphic__design a .projects__app__design a .projects__app__design__img .projects__app__design__text h1 {
+.projects__app__design a .projects__app__design__img .projects__app__design__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -884,7 +832,7 @@ body .projects__graphic__design a .projects__app__design a .projects__app__desig
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-body .projects__graphic__design a .projects__app__design a .projects__app__design__img .projects__app__design__text p {
+.projects__app__design a .projects__app__design__img .projects__app__design__text p {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -895,16 +843,17 @@ body .projects__graphic__design a .projects__app__design a .projects__app__desig
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-body .projects__graphic__design a .projects__app__design a:hover img {
+.projects__app__design a:hover img {
   opacity: 0.5;
 }
-body .projects__graphic__design a .projects__web__design {
+
+.projects__web__design {
   background-color: rgb(231, 129, 107);
   border-radius: 15px;
   width: 541px;
   height: 308px;
 }
-body .projects__graphic__design a .projects__web__design a {
+.projects__web__design a {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -915,17 +864,17 @@ body .projects__graphic__design a .projects__web__design a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-body .projects__graphic__design a .projects__web__design a .projects__web__design__img {
+.projects__web__design a .projects__web__design__img {
   position: relative;
 }
-body .projects__graphic__design a .projects__web__design a .projects__web__design__img .web {
+.projects__web__design a .projects__web__design__img .web {
   width: 541px;
   height: 308px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
 }
-body .projects__graphic__design a .projects__web__design a .projects__web__design__img .projects__web__design__text {
+.projects__web__design a .projects__web__design__img .projects__web__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -942,7 +891,7 @@ body .projects__graphic__design a .projects__web__design a .projects__web__desig
       -ms-flex-align: center;
           align-items: center;
 }
-body .projects__graphic__design a .projects__web__design a .projects__web__design__img .projects__web__design__text h1 {
+.projects__web__design a .projects__web__design__img .projects__web__design__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -953,73 +902,10 @@ body .projects__graphic__design a .projects__web__design a .projects__web__desig
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-body .projects__graphic__design a .projects__web__design a:hover img {
+.projects__web__design a:hover img {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 375px) {
-  body header img {
-    width: 375px;
-  }
-  body header nav {
-    display: none;
-  }
-  body .section__solutions__design {
-    width: 375px;
-    height: 320px;
-    background-color: rgb(231, 129, 107);
-    background-image: none;
-  }
-  body .section__solutions__design div {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-  body .section__solutions__design div h2 {
-    font-family: "Jost", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
-    width: 327px;
-    height: 36px;
-  }
-  body .section__solutions__design div p {
-    font-family: "Jost", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
-    text-align: center;
-    width: 327px;
-    height: 50px;
-  }
-  body .section__solutions__design div p br {
-    display: none;
-  }
-  body .section__tech {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  body .section__projects {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
 body {
   width: 1440px;
 }
