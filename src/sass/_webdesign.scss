@@ -1,8 +1,15 @@
 body {
+  height: 5301px;
   header {
     @media screen and(max-width: 375px) {
       margin: auto;
       width: 375px;
+      height: 96px;
+      img {
+        margin-top: 35px;
+        margin-bottom: 34px;
+        margin-left: 24px;
+      }
       nav {
         display: none;
       }
