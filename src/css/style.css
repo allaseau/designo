@@ -1,5 +1,6 @@
 /* mixin index*/
 /*mixin aboutUs*/
+/* mixin locations*/
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,18 @@ body {
   max-width: 1440px;
   max-height: 2940px;
   margin: auto;
+}
+@media screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 body header {
   display: -webkit-box;
@@ -28,11 +41,30 @@ body header img {
   -ms-flex-item-align: center;
       align-self: center;
 }
+@media screen and (max-width: 375px) {
+  body header img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 24px;
+  }
+}
+@media (max-width: 375px) {
+  body header nav {
+    width: 327px;
+    margin: 0 auto;
+  }
+}
 body header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 42px;
+}
+@media (max-width: 375px) {
+  body header nav ul {
+    display: none;
+  }
 }
 body header nav ul li {
   display: inline-block;
@@ -46,10 +78,42 @@ body header nav ul li a {
   line-height: 14px;
   letter-spacing: 2px;
 }
+body header nav ul li a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: rgb(51, 49, 54);
+          text-decoration-color: rgb(51, 49, 54);
+}
+body main {
+  position: relative;
+}
+body main .section__rectangle {
+  position: absolute;
+  z-index: -1;
+  margin-top: 350px;
+}
+@media (max-width: 375px) {
+  body main .section__rectangle {
+    display: none;
+  }
+}
+body main .section__rectangle__upsidedown {
+  position: absolute;
+  z-index: -1;
+  margin-top: 1700px;
+  margin-left: 440px;
+}
+@media (max-width: 375px) {
+  body main .section__rectangle__upsidedown {
+    display: none;
+  }
+}
 body main .section__services {
-  background-image: url("../img/fond 1.png");
+  background-color: rgb(231, 129, 107);
+  background-image: url("../img/rond2.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 610px 640px;
+  background-position: right;
   height: 640px;
   width: 1111px;
   margin: 0 auto 160px;
@@ -63,6 +127,12 @@ body main .section__services {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 375px) {
+  body main .section__services {
+    width: 375px;
+    height: 843px;
+  }
 }
 body main .section__services article {
   position: relative;
@@ -112,6 +182,10 @@ body main .section__services article div a:visited {
   padding: 18px 25px 16px 24px;
   background-color: rgb(255, 255, 255);
 }
+body main .section__services article div a:hover {
+  background-color: rgb(255, 173, 155);
+  color: rgb(255, 255, 255);
+}
 body main .section__services article .services__img {
   height: 489.25px;
   width: 267.31px;
@@ -129,13 +203,33 @@ body main .section__projects {
   margin: 0 auto 160px;
   width: 1111px;
 }
+@media (max-width: 375px) {
+  body main .section__projects {
+    width: 327px;
+    grid-template-areas: "a" "b" "c";
+  }
+}
 body main .section__projects .projects__web {
   grid-area: a;
+  background-color: rgb(231, 129, 107);
+  height: 640px;
+  border-radius: 15px;
 }
-body main .section__projects .projects__web .projects__web__img {
+body main .section__projects .projects__web a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+body main .section__projects .projects__web a .projects__web__img {
   position: relative;
 }
-body main .section__projects .projects__web .projects__web__img .projects__web__text {
+body main .section__projects .projects__web a .projects__web__img .projects__web__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -152,7 +246,7 @@ body main .section__projects .projects__web .projects__web__img .projects__web__
       -ms-flex-align: center;
           align-items: center;
 }
-body main .section__projects .projects__web .projects__web__img .projects__web__text h1 {
+body main .section__projects .projects__web a .projects__web__img .projects__web__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -163,54 +257,15 @@ body main .section__projects .projects__web .projects__web__img .projects__web__
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-body main .section__projects .projects__web .projects__web__img .projects__web__text a {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+body main .section__projects .projects__web a:hover img {
+  opacity: 0.5;
 }
-body main .projects__app {
+body main .section__projects .projects__app {
   grid-area: b;
+  background-color: rgb(231, 129, 107);
+  border-radius: 15px;
 }
-body main .projects__app .projects__app__img {
-  position: relative;
-  width: 541px;
-  height: 308px;
-}
-body main .projects__app .projects__app__img .projects__app__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-body main .projects__app .projects__app__img .projects__app__text h1 {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 2px;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-body main .projects__app .projects__app__img .projects__app__text a {
+body main .section__projects .projects__app a {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -221,15 +276,12 @@ body main .projects__app .projects__app__img .projects__app__text a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-body main .projects__graphic {
-  grid-area: c;
-}
-body main .projects__graphic .projects__graphic__img {
+body main .section__projects .projects__app a .projects__app__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-body main .projects__graphic .projects__graphic__img .projects__graphic__text {
+body main .section__projects .projects__app a .projects__app__img .projects__app__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -246,7 +298,59 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text {
       -ms-flex-align: center;
           align-items: center;
 }
-body main .projects__graphic .projects__graphic__img .projects__graphic__text h1 {
+body main .section__projects .projects__app a .projects__app__img .projects__app__text h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+body main .section__projects .projects__app a:hover img {
+  opacity: 0.5;
+}
+body main .section__projects .projects__graphic {
+  grid-area: c;
+  background-color: rgb(231, 129, 107);
+}
+body main .section__projects .projects__graphic a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+body main .section__projects .projects__graphic a .projects__graphic__img {
+  opacity: 1;
+  position: relative;
+  width: 541px;
+  height: 308px;
+}
+body main .section__projects .projects__graphic a .projects__graphic__img .projects__graphic__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .section__projects .projects__graphic a .projects__graphic__img .projects__graphic__text h1 {
   width: 400px;
   text-align: center;
   font-family: "Jost", sans-serif;
@@ -259,19 +363,10 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text h1
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-body main .projects__graphic .projects__graphic__img .projects__graphic__text a {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+body main .section__projects .projects__graphic a:hover img {
+  opacity: 0.5;
 }
-
-.section__values {
+body main .section__values {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,14 +387,26 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text a 
   color: rgb(51, 49, 54);
   width: 1110px;
 }
-.section__values .values__passion, .section__values .values__friendly, .section__values .values__resourceful {
+@media (max-width: 375px) {
+  body main .section__values {
+    width: 327px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+body main .section__values .values__passion, body main .section__values .values__friendly, body main .section__values .values__resourceful {
   font-size: small;
   text-align: center;
 }
-.section__values .values__passion img, .section__values .values__friendly img, .section__values .values__resourceful img {
+body main .section__values .values__passion img, body main .section__values .values__friendly img, body main .section__values .values__resourceful img {
   margin-bottom: 48px;
 }
-.section__values .values__passion h2, .section__values .values__friendly h2, .section__values .values__resourceful h2 {
+body main .section__values .values__passion h2, body main .section__values .values__friendly h2, body main .section__values .values__resourceful h2 {
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 20px;
@@ -309,7 +416,7 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text a 
   width: 350px;
   height: 26px;
 }
-.section__values .values__passion p, .section__values .values__friendly p, .section__values .values__resourceful p {
+body main .section__values .values__passion p, body main .section__values .values__friendly p, body main .section__values .values__resourceful p {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -317,12 +424,18 @@ body main .projects__graphic .projects__graphic__img .projects__graphic__text a 
   width: 350px;
   height: 104px;
 }
-footer {
+body footer {
   position: relative;
   z-index: auto;
   height: 393px;
 }
-footer .section__contact {
+@media screen and (max-width: 375px) {
+  body footer {
+    width: 375px;
+    height: 1005px;
+  }
+}
+body footer .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,10 +454,16 @@ footer .section__contact {
   position: relative;
   z-index: 1;
 }
-footer .section__contact div {
+@media screen and (max-width: 375px) {
+  body footer .section__contact {
+    width: 327px;
+    height: 379px;
+  }
+}
+body footer .section__contact div {
   margin-left: 95px;
 }
-footer .section__contact div h1 {
+body footer .section__contact div h1 {
   max-width: 268px;
   max-height: 98px;
   font-family: "Jost";
@@ -353,7 +472,7 @@ footer .section__contact div h1 {
   font-size: 40px;
   line-height: 40px;
 }
-footer .section__contact div p {
+body footer .section__contact div p {
   max-width: 459px;
   max-height: 78px;
   font-family: "Jost";
@@ -363,7 +482,7 @@ footer .section__contact div p {
   line-height: 26px;
   margin-bottom: 46px;
 }
-footer .section__contact a {
+body footer .section__contact a {
   max-width: 152px;
   max-height: 56px;
   letter-spacing: 1px;
@@ -378,15 +497,19 @@ footer .section__contact a {
   text-decoration: none;
   color: rgb(29, 28, 30);
 }
-footer .section__contact a:link,
-footer .section__contact a:visited {
+body footer .section__contact a:link,
+body footer .section__contact a:visited {
   padding: 17px 19px 17px 18px;
   background-color: rgb(255, 255, 255);
 }
-footer .lower__container {
+body footer .section__contact a:hover {
+  background-color: rgb(255, 173, 155);
+  color: rgb(255, 255, 255);
+}
+body footer .lower__container {
   background-color: rgb(29, 28, 30);
 }
-footer .lower__container .footer__nav div {
+body footer .lower__container .footer__nav div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,13 +517,13 @@ footer .lower__container .footer__nav div {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-footer .lower__container .footer__nav div .footer__nav__img {
+body footer .lower__container .footer__nav div .footer__nav__img {
   height: 27px;
   width: 197px;
   margin-left: 165px;
   margin-top: 144px;
 }
-footer .lower__container .footer__nav div ul {
+body footer .lower__container .footer__nav div ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,7 +536,7 @@ footer .lower__container .footer__nav div ul {
   margin-top: 151px;
   margin-bottom: 40px;
 }
-footer .lower__container .footer__nav div ul li a {
+body footer .lower__container .footer__nav div ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -424,12 +547,18 @@ footer .lower__container .footer__nav div ul li a {
   line-height: 14px;
   letter-spacing: 2px;
 }
-footer .lower__container hr {
+body footer .lower__container .footer__nav div ul li a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: rgb(255, 255, 255);
+          text-decoration-color: rgb(255, 255, 255);
+}
+body footer .lower__container hr {
   width: 1111px;
   margin: auto;
   opacity: 0.1;
 }
-footer .lower__container .inline__lower__container {
+body footer .lower__container .inline__lower__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,7 +570,7 @@ footer .lower__container .inline__lower__container {
           align-items: flex-end;
   margin: 0;
 }
-footer .lower__container .inline__lower__container .section__info {
+body footer .lower__container .inline__lower__container .section__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,28 +582,28 @@ footer .lower__container .inline__lower__container .section__info {
   font-size: 16px;
   line-height: 26px;
 }
-footer .lower__container .inline__lower__container .section__info .info__address {
+body footer .lower__container .inline__lower__container .section__info .info__address {
   padding-right: 30px;
   width: 350px;
   height: 78px;
   margin-bottom: 72px;
 }
-footer .lower__container .inline__lower__container .section__info .info__address h3 {
+body footer .lower__container .inline__lower__container .section__info .info__address h3 {
   font-weight: 700;
 }
-footer .lower__container .inline__lower__container .section__info .info__address p {
+body footer .lower__container .inline__lower__container .section__info .info__address p {
   font-weight: 400;
 }
-footer .lower__container .inline__lower__container .section__info .section__contact {
+body footer .lower__container .inline__lower__container .section__info .section__contact {
   width: 350px;
   height: 78px;
 }
-footer .lower__container .inline__lower__container .section__media {
+body footer .lower__container .inline__lower__container .section__media {
   margin-top: 85px;
   margin-right: 164px;
   margin-bottom: 72px;
 }
-footer .lower__container .inline__lower__container .section__media ul {
+body footer .lower__container .inline__lower__container .section__media ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,8 +611,12 @@ footer .lower__container .inline__lower__container .section__media ul {
   gap: 16px;
   color: rgb(231, 129, 107);
 }
-footer .lower__container .inline__lower__container .section__media ul li i {
+body footer .lower__container .inline__lower__container .section__media ul li i {
   font-size: 24px;
+}
+body footer .lower__container .inline__lower__container .section__media ul li i:hover {
+  color: rgb(255, 173, 155);
+  cursor: pointer;
 }
 
 .section__solutions__design {
@@ -501,6 +634,14 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 375px) {
+  .section__solutions__design {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .section__solutions__design div {
   margin-left: 190px;
@@ -538,6 +679,16 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   width: 1110px;
   height: 988px;
 }
+@media (max-width: 375px) {
+  .section__tech {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .section__tech .tech__div {
   width: 350px;
   height: 478px;
@@ -564,13 +715,51 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   font-size: 16px;
   line-height: 26px;
 }
+.section__tech .tech__div:hover {
+  background-color: rgb(231, 129, 107);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.section__tech .tech__div:hover h2 {
+  color: rgb(255, 255, 255);
+}
 
-.projects__graphic__design .projects__graphic__design__img {
+.projects__graphic__design {
+  background-color: rgb(231, 129, 107);
+  border-radius: 15px;
+  width: 541px;
+  height: 308px;
+}
+@media (max-width: 375px) {
+  .projects__graphic__design {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.projects__graphic__design a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.projects__graphic__design a .projects__graphic__design__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-.projects__graphic__design .projects__graphic__design__img .projects__graphic__design__text {
+.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -587,7 +776,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects__graphic__design .projects__graphic__design__img .projects__graphic__design__text h1 {
+.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
   width: 400px;
   text-align: center;
   font-family: "Jost", sans-serif;
@@ -600,24 +789,22 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.projects__graphic__design .projects__graphic__design__img .projects__graphic__design__text a {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+.projects__graphic__design a:hover img {
+  opacity: 0.5;
 }
 
-.projects__app__design .projects__app__design__img {
+.projects__app__design {
+  background-color: rgb(231, 129, 107);
+  border-radius: 15px;
+  width: 541px;
+  height: 308px;
+}
+.projects__app__design a .projects__app__design__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-.projects__app__design .projects__app__design__img .projects__app__design__text {
+.projects__app__design a .projects__app__design__img .projects__app__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -634,7 +821,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects__app__design .projects__app__design__img .projects__app__design__text h1 {
+.projects__app__design a .projects__app__design__img .projects__app__design__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -645,7 +832,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.projects__app__design .projects__app__design__img .projects__app__design__text a {
+.projects__app__design a .projects__app__design__img .projects__app__design__text p {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -656,18 +843,38 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+.projects__app__design a:hover img {
+  opacity: 0.5;
+}
 
-.projects__web__design .projects__web__design__img {
+.projects__web__design {
+  background-color: rgb(231, 129, 107);
+  border-radius: 15px;
+  width: 541px;
+  height: 308px;
+}
+.projects__web__design a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.projects__web__design a .projects__web__design__img {
   position: relative;
 }
-.projects__web__design .projects__web__design__img .web {
+.projects__web__design a .projects__web__design__img .web {
   width: 541px;
   height: 308px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
 }
-.projects__web__design .projects__web__design__img .projects__web__design__text {
+.projects__web__design a .projects__web__design__img .projects__web__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -684,7 +891,7 @@ footer .lower__container .inline__lower__container .section__media ul li i {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects__web__design .projects__web__design__img .projects__web__design__text h1 {
+.projects__web__design a .projects__web__design__img .projects__web__design__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -695,16 +902,8 @@ footer .lower__container .inline__lower__container .section__media ul li i {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.projects__web__design .projects__web__design__img .projects__web__design__text a {
-  font-family: "Jost", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+.projects__web__design a:hover img {
+  opacity: 0.5;
 }
 
 @media (max-width: 375px) {
@@ -763,6 +962,9 @@ body .section__aboutUs {
 }
 body .section__aboutUs div {
   background-color: rgb(231, 129, 107);
+  background-image: url("../img/rond.png");
+  background-repeat: no-repeat;
+  background-size: 635px 480px;
   color: rgb(255, 255, 255);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -893,6 +1095,9 @@ body .section__location a:visited {
   padding: 18px 18.5px 16px;
   background-color: rgb(231, 129, 107);
 }
+body .section__location a:hover {
+  background-color: rgb(255, 173, 155);
+}
 body .section__solutions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,23 +1148,56 @@ body .section__solutions div .solutions__img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 32px;
+  margin: 0 auto 32px;
+  gap: 30px;
+  margin-top: 64px;
 }
 .section__location__belgium .box {
   background-color: rgb(253, 243, 240);
   height: 326px;
   width: 730px;
   border-radius: 20px;
-  padding-top: 88px;
-  padding-left: 95px;
 }
 .section__location__belgium .box h2 {
   color: rgb(231, 129, 107);
+  margin-bottom: 24px;
+  margin-top: 88px;
+  margin-left: 95px;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
 }
-.section__location__belgium .box div {
+.section__location__belgium .box .box__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-left: 95px;
+}
+.section__location__belgium .box .box__txt div {
   height: 78px;
   width: 255px;
-  padding-top: 24px;
+  color: rgb(51, 49, 54);
+}
+.section__location__belgium .box .box__txt div h3 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+.section__location__belgium .box .box__txt div p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.section__location__belgium .box img {
+  height: 326px;
+  width: 350px;
 }
 
 .section__location__australia {
@@ -969,23 +1207,55 @@ body .section__solutions div .solutions__img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 32px;
+  margin: 0 auto 32px;
+  gap: 30px;
 }
 .section__location__australia .box {
   background-color: rgb(253, 243, 240);
   height: 326px;
   width: 730px;
   border-radius: 20px;
-  padding-top: 88px;
-  padding-left: 95px;
 }
 .section__location__australia .box h2 {
   color: rgb(231, 129, 107);
+  margin-bottom: 24px;
+  margin-top: 88px;
+  margin-left: 95px;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
 }
-.section__location__australia .box div {
+.section__location__australia .box .box__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-left: 95px;
+}
+.section__location__australia .box .box__txt div {
   height: 78px;
   width: 255px;
-  padding-top: 24px;
+  color: rgb(51, 49, 54);
+}
+.section__location__australia .box .box__txt div h3 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+.section__location__australia .box .box__txt div p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.section__location__australia .box img {
+  height: 326px;
+  width: 350px;
 }
 
 .section__location__uk {
@@ -995,23 +1265,55 @@ body .section__solutions div .solutions__img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 32px;
+  margin: 0 auto 160px;
+  gap: 30px;
 }
 .section__location__uk .box {
   background-color: rgb(253, 243, 240);
   height: 326px;
   width: 730px;
   border-radius: 20px;
-  padding-top: 88px;
-  padding-left: 95px;
 }
 .section__location__uk .box h2 {
   color: rgb(231, 129, 107);
+  margin-bottom: 24px;
+  margin-top: 88px;
+  margin-left: 95px;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
 }
-.section__location__uk .box div {
+.section__location__uk .box .box__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-left: 95px;
+}
+.section__location__uk .box .box__txt div {
   height: 78px;
   width: 255px;
-  padding-top: 24px;
+  color: rgb(51, 49, 54);
+}
+.section__location__uk .box .box__txt div h3 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+.section__location__uk .box .box__txt div p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.section__location__uk .box img {
+  height: 326px;
+  width: 350px;
 }
 
 .section__form {
@@ -1019,6 +1321,9 @@ body .section__solutions div .solutions__img {
   display: -ms-flexbox;
   display: flex;
   background-color: rgb(231, 129, 107);
+  background-image: url("../img/rond.png");
+  background-repeat: no-repeat;
+  background-size: 660px 520px;
   border-radius: 20px;
   color: rgb(255, 255, 255);
   width: 1111px;
@@ -1027,28 +1332,83 @@ body .section__solutions div .solutions__img {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
+  margin: 0 auto 160px;
 }
 .section__form div h2 {
   width: 540px;
   height: 48px;
-  padding-top: 295px;
   padding-left: 95px;
   padding-bottom: 32px;
+  font-style: normal;
   font-weight: 500;
   font-size: 48px;
   line-height: 48px;
+  margin-top: 135px;
 }
 .section__form div p {
   width: 445px;
   height: 104px;
-  padding-bottom: 191px;
-  padding-left: 95px;
+  margin-bottom: 161px;
+  margin-left: 95px;
+  margin-right: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }
-.section__form button {
+.section__form form label {
+  opacity: 0.5;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+input {
+  width: 380px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+}
+input:focus {
+  outline: none;
+}
+
+textarea {
+  width: 380px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  resize: none;
+  color: rgb(255, 255, 255);
+}
+textarea:focus {
+  outline: none;
+}
+
+button {
   padding: 17px 47px 17px 48px;
+  margin-left: 228px;
+  margin-right: 96px;
+  margin-top: 24px;
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
   border: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: rgb(255, 173, 155);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .footer__contact {

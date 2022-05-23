@@ -1,75 +1,84 @@
 .section__location__belgium {
-    display: flex;
-    justify-content: center;
-    padding: 32px;
+  @include containerLA;
+  margin-top: 64px;
 
-    .box {
-        background-color: $pinkBg;
-        height: 326px;
-        width: 730px;
-        border-radius: 20px;
-        padding-top: 88px;
-        padding-left: 95px;
-
-        h2 {
-            color: $pink;
-        }
-
-        div {
-            height: 78px;
-            width: 255px;
-            padding-top: 24px;
-        }
+  .box {
+    @include lowcontainer;
+    h2 {
+      @include lowcontainerH;
     }
+
+    .box__txt {
+      @include lowcontainerHT;
+      div {
+        @include lowcontainerHTD;
+        h3 {
+          @include lowcontainerHTDH;
+        }
+        p {
+          @include lowcontainerHTDP;
+        }
+      }
+    }
+    img {
+      height: 326px;
+      width: 350px;
+    }
+  }
 }
 
 .section__location__australia {
-    display: flex;
-    justify-content: center;
-    padding: 32px;
+  @include containerLA;
 
-    .box {
-        background-color: $pinkBg;
-        height: 326px;
-        width: 730px;
-        border-radius: 20px;
-        padding-top: 88px;
-        padding-left: 95px;
-
-        h2 {
-            color: $pink;
-        }
-
-        div {
-            height: 78px;
-            width: 255px;
-            padding-top: 24px;
-        }
+  .box {
+    @include lowcontainer;
+    h2 {
+      @include lowcontainerH;
     }
+
+    .box__txt {
+      @include lowcontainerHT;
+      div {
+        @include lowcontainerHTD;
+        h3 {
+          @include lowcontainerHTDH;
+        }
+        p {
+          @include lowcontainerHTDP;
+        }
+      }
+    }
+    img {
+      height: 326px;
+      width: 350px;
+    }
+  }
 }
 
-
 .section__location__uk {
-    display: flex;
-    justify-content: center;
-    padding: 32px;
+  @include containerLB;
 
-    .box {
-        background-color: $pinkBg;
-        height: 326px;
-        width: 730px;
-        border-radius: 20px;
-        padding-top: 88px;
-        padding-left: 95px;
-
-        h2 {
-            color: $pink;
-        }
-
-        div {
-            height: 78px;
-            width: 255px;
-            padding-top: 24px;
-        }
+  .box {
+    @include lowcontainer;
+    h2 {
+      @include lowcontainerH;
     }
+
+    .box__txt {
+      @include lowcontainerHT;
+      div {
+        @include lowcontainerHTD;
+        h3 {
+          @include lowcontainerHTDH;
+        }
+        p {
+          @include lowcontainerHTDP;
+        }
+      }
+    }
+    img {
+      height: 326px;
+      width: 350px;
+    }
+  }
 }

@@ -9,7 +9,9 @@
   margin-bottom: 160px;
   display: flex;
   align-items: center;
-
+  @media (max-width: 375px){
+    flex-direction: column;
+  }
   div {
     margin-left: 190px;
     margin-right: 191px;
@@ -46,7 +48,10 @@
   margin: 0 auto 192px;
   width: 1110px;
   height: 988px;
-
+  @media (max-width: 375px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
   .tech__div {
     width: 350px;
     height: 478px;
@@ -75,10 +80,28 @@
       line-height: 26px;
     }
   }
+  .tech__div:hover{
+    background-color: $pink;
+    color: $white;
+    cursor: pointer;
+    h2{
+      color: $white;
+    }
+  }
 }
 
 .projects__graphic__design {
-
+  background-color: $pink;
+  border-radius: 15px;
+  width:541px;
+  height: 308px;
+  @media (max-width: 375px) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  a {
+    @include projectsA;
   .projects__graphic__design__img {
     position: relative;
     width: 541px;
@@ -97,40 +120,60 @@
         @include projectsH;
       }
 
-      a {
-        @include projectsA;
       }
+    }
+  }
+  a:hover{
+    img{
+      opacity: .5;
     }
   }
 }
 
 .projects__app__design {
+  background-color: $pink;
+  border-radius: 15px;
+  width:541px;
+  height: 308px;
+  a{
 
-  .projects__app__design__img {
-    position: relative;
-    width: 541px;
-    height: 308px;
-
-
-    .projects__app__design__text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      @include projectsT;
-
-      h1 {
-        @include projectsH;
+    .projects__app__design__img {
+      position: relative;
+      width:541px ;
+      height: 308px;
+  
+  
+      .projects__app__design__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include projectsT;
+  
+        h1 {
+          @include projectsH;
+        }
+        p{
+          @include projectsA;
+        }
+  
       }
-
-      a {
-        @include projectsA;
-      }
+    }
+  }
+  a:hover{
+    img{
+      opacity: .5;
     }
   }
 }
 
 .projects__web__design {
+  background-color: $pink;
+  border-radius: 15px;
+  width:541px;
+  height: 308px;
+  a {
+    @include projectsA;
   .projects__web__design__img {
     position: relative;
 
@@ -152,9 +195,12 @@
         @include projectsH;
       }
 
-      a {
-        @include projectsA;
       }
+    }
+  }
+  a:hover{
+    img{
+      opacity: .5;
     }
   }
 }
