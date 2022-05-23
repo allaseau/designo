@@ -795,6 +795,9 @@ body .section__aboutUs {
 }
 body .section__aboutUs div {
   background-color: rgb(231, 129, 107);
+  background-image: url("../img/rond.png");
+  background-repeat: no-repeat;
+  background-size: 635px 480px;
   color: rgb(255, 255, 255);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;

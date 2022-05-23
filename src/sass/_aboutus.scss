@@ -4,6 +4,9 @@ body {
     @include containerA;
     div {
       background-color: $pink;
+      background-image: url("../img/rond.png");
+      background-repeat: no-repeat;
+      background-size: 635px 480px;
       color: $white;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
@@ -89,10 +92,10 @@ body {
       padding: 18px 18.5px 16px;
       background-color: $pink;
     }
-      a:hover{
-        background-color: $peach;
-      }
+    a:hover {
+      background-color: $peach;
     }
+  }
   .section__solutions {
     @include containerB;
     div {
