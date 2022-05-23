@@ -51,6 +51,18 @@ body {
   }
 
   main {
+    position: relative;
+    .section__rectangle {
+      position: absolute;
+      z-index: -1;
+      margin-top: 350px;
+    }
+    .section__rectangle__upsidedown {
+      position: absolute;
+      z-index: -1;
+      margin-top: 1700px;
+      margin-left: 440px;
+    }
     .section__services {
       background-color: $pink;
       background-image: url("../img/rond2.png");
@@ -121,7 +133,6 @@ body {
             color: $white;
           }
         }
-
         .services__img {
           height: 489.25px;
           width: 267.31px;

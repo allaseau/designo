@@ -53,6 +53,20 @@ body header nav ul li a:hover {
   -webkit-text-decoration-color: rgb(51, 49, 54);
           text-decoration-color: rgb(51, 49, 54);
 }
+body main {
+  position: relative;
+}
+body main .section__rectangle {
+  position: absolute;
+  z-index: -1;
+  margin-top: 350px;
+}
+body main .section__rectangle__upsidedown {
+  position: absolute;
+  z-index: -1;
+  margin-top: 1700px;
+  margin-left: 440px;
+}
 body main .section__services {
   background-color: rgb(231, 129, 107);
   background-image: url("../img/rond2.png");
