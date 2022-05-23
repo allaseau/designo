@@ -95,3 +95,52 @@ button:hover {
 .footer__contact {
   height: 321px;
 }
+@media (max-width: 375px) {
+  body{
+    height: 1732px;
+    .section__form{
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+      height: 764px;
+      border-radius: 0px;
+      div{
+        text-align: center;
+      }
+      h2{
+        width: 327px;
+        height: 36px;
+        margin-top: 72px;
+      }
+      p{
+        width: 327px;
+        height: 125px; 
+        margin-bottom: 60px;
+      }
+      form{
+        width: 327px;
+        height: 338px; 
+        input{
+          width: 327px;
+        }
+        textarea{
+          width: 327px;
+        }
+        button{
+          width: 152px;
+          height: 56px;
+          margin: 24px 0px 0px 0px;
+          
+        }
+      }
+    }
+    .section__location{
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+      height: 1188px;
+    }
+  }
+  
+  }
+  

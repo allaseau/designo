@@ -906,6 +906,49 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   opacity: 0.5;
 }
 
+@media (max-width: 375px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  body header nav {
+    display: none;
+  }
+  body main .section__solutions__design h2 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .section__tech {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  body main .section__projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 body {
   width: 1440px;
 }
@@ -1373,4 +1416,61 @@ button:hover {
 
 .footer__contact {
   height: 321px;
+}
+
+@media (max-width: 375px) {
+  body {
+    height: 1732px;
+  }
+  body .section__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 375px;
+    height: 764px;
+    border-radius: 0px;
+  }
+  body .section__form div {
+    text-align: center;
+  }
+  body .section__form h2 {
+    width: 327px;
+    height: 36px;
+    margin-top: 72px;
+  }
+  body .section__form p {
+    width: 327px;
+    height: 125px;
+    margin-bottom: 60px;
+  }
+  body .section__form form {
+    width: 327px;
+    height: 338px;
+  }
+  body .section__form form input {
+    width: 327px;
+  }
+  body .section__form form textarea {
+    width: 327px;
+  }
+  body .section__form form button {
+    width: 152px;
+    height: 56px;
+    margin: 24px 0px 0px 0px;
+  }
+  body .section__location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 375px;
+    height: 1188px;
+  }
 }/*# sourceMappingURL=style.css.map */

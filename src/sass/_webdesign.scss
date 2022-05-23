@@ -15,6 +15,7 @@
   div {
     margin-left: 190px;
     margin-right: 191px;
+
     h2 {
       height: 48px;
       font-family: $fontJ;
@@ -25,6 +26,7 @@
       margin-bottom: 24px;
       text-align: center;
     }
+
     p {
       height: 52px;
       width: 730px;
@@ -37,7 +39,9 @@
     }
   }
 }
+
 .section__tech {
+
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -54,6 +58,7 @@
     text-align: center;
     background-color: $pinkBg;
     border-radius: 15px;
+
     h2 {
       margin-top: 30px;
       margin-bottom: 16px;
@@ -64,6 +69,7 @@
       font-size: 20px;
       line-height: 26px;
     }
+
     p {
       margin: 0 auto;
       width: 286px;
@@ -83,6 +89,7 @@
     }
   }
 }
+
 .projects__graphic__design {
   background-color: $pink;
   border-radius: 15px;
@@ -97,7 +104,7 @@
     @include projectsA;
   .projects__graphic__design__img {
     position: relative;
-    width:541px ;
+    width: 541px;
     height: 308px;
 
     .projects__graphic__design__text {
@@ -122,6 +129,7 @@
     }
   }
 }
+
 .projects__app__design {
   background-color: $pink;
   border-radius: 15px;
@@ -158,6 +166,7 @@
     }
   }
 }
+
 .projects__web__design {
   background-color: $pink;
   border-radius: 15px;
@@ -167,12 +176,14 @@
     @include projectsA;
   .projects__web__design__img {
     position: relative;
-    .web{
+
+    .web {
       width: 541px;
       height: 308px;
-      object-fit:cover ;
+      object-fit: cover;
       border-radius: 15px;
     }
+
     .projects__web__design__text {
       position: absolute;
       top: 50%;
@@ -192,4 +203,40 @@
       opacity: .5;
     }
   }
+}
+
+@media(max-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    header {
+      nav{
+        display: none;
+      }
+    }
+
+    main {
+      .section__solutions__design{
+        h2{
+          align-items: center;
+        }
+      }
+
+      .section__tech {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      .section__projects{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+    }
+
+  }
+
+
 }
