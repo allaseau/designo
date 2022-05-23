@@ -1598,6 +1598,7 @@ body .section__solutions div .solutions__img {
   body .section__location__belgium img {
     height: 394px;
     width: 375px;
+    margin-top: 24px;
   }
   body .section__location__belgium .box {
     display: -webkit-box;
@@ -1609,6 +1610,7 @@ body .section__solutions div .solutions__img {
             flex-direction: column;
     height: 394px;
     width: 375px;
+    border-radius: 0px;
   }
   body .section__location__belgium .box h2 {
     margin: 80px 24px 24px 24px;
@@ -1655,6 +1657,7 @@ body .section__solutions div .solutions__img {
             flex-direction: column;
     height: 394px;
     width: 375px;
+    border-radius: 0px;
   }
   body .section__location__australia .box h2 {
     margin: 80px 24px 24px 24px;
@@ -1701,6 +1704,7 @@ body .section__solutions div .solutions__img {
             flex-direction: column;
     height: 394px;
     width: 375px;
+    border-radius: 0px;
   }
   body .section__location__uk .box h2 {
     margin: 80px 24px 24px 24px;
