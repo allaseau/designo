@@ -776,7 +776,16 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
     margin: 0 95px 64px;
   }
 }
-.section__solutions__design {
+@media screen and (max-width: 375px) {
+  body header {
+    margin: auto;
+    width: 375px;
+  }
+  body header nav {
+    display: none;
+  }
+}
+body .section__solutions__design {
   color: rgb(255, 255, 255);
   width: 1111px;
   height: 252px;
@@ -792,19 +801,35 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 375px) {
-  .section__solutions__design {
+@media screen and (max-width: 375px) {
+  body .section__solutions__design {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-image: none;
+    background-color: rgb(231, 129, 107);
+    margin: 0;
+    width: 375px;
+    height: 320px;
+  }
+  body .section__solutions__design br {
+    display: none;
   }
 }
-.section__solutions__design div {
+body .section__solutions__design div {
   margin-left: 190px;
   margin-right: 191px;
 }
-.section__solutions__design div h2 {
+@media screen and (max-width: 375px) {
+  body .section__solutions__design div {
+    margin-left: 24px;
+    margin-right: 24px;
+    text-align: center;
+    margin: auto;
+  }
+}
+body .section__solutions__design div h2 {
   height: 48px;
   font-family: "Jost", sans-serif;
   font-style: normal;
@@ -814,7 +839,18 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   margin-bottom: 24px;
   text-align: center;
 }
-.section__solutions__design div p {
+@media screen and (max-width: 375px) {
+  body .section__solutions__design div h2 {
+    width: 327px;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+  }
+}
+body .section__solutions__design div p {
   height: 52px;
   width: 730px;
   font-family: "Jost", sans-serif;
@@ -824,8 +860,18 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   line-height: 26px;
   text-align: center;
 }
-
-.section__tech {
+@media screen and (max-width: 375px) {
+  body .section__solutions__design div p {
+    width: 327px;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+body .section__tech {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -837,23 +883,25 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   height: 988px;
 }
 @media (max-width: 375px) {
-  .section__tech {
+  body .section__tech {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 3068px;
+    margin-bottom: 96px;
   }
 }
-.section__tech .tech__div {
+body .section__tech .tech__div {
   width: 350px;
   height: 478px;
   text-align: center;
   background-color: rgb(253, 243, 240);
   border-radius: 15px;
 }
-.section__tech .tech__div h2 {
+body .section__tech .tech__div h2 {
   margin-top: 30px;
   margin-bottom: 16px;
   color: rgb(231, 129, 107);
@@ -863,7 +911,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   font-size: 20px;
   line-height: 26px;
 }
-.section__tech .tech__div p {
+body .section__tech .tech__div p {
   margin: 0 auto;
   width: 286px;
   font-family: "Jost", sans-serif;
@@ -872,23 +920,30 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   font-size: 16px;
   line-height: 26px;
 }
-.section__tech .tech__div:hover {
+body .section__tech .tech__div:hover {
   background-color: rgb(231, 129, 107);
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-.section__tech .tech__div:hover h2 {
+body .section__tech .tech__div:hover h2 {
   color: rgb(255, 255, 255);
 }
-
-.projects__graphic__design {
+@media screen and (max-width: 375px) {
+  body .section__projects {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr !important;
+    height: 524px;
+    margin: 0 auto 96px;
+  }
+}
+body .section__projects .projects__graphic__design {
   background-color: rgb(231, 129, 107);
   border-radius: 15px;
   width: 541px;
   height: 308px;
 }
 @media (max-width: 375px) {
-  .projects__graphic__design {
+  body .section__projects .projects__graphic__design {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -898,9 +953,11 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 327px;
+    height: 250px;
   }
 }
-.projects__graphic__design a {
+body .section__projects .projects__graphic__design a {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -911,12 +968,24 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.projects__graphic__design a .projects__graphic__design__img {
+body .section__projects .projects__graphic__design a .projects__graphic__design__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text {
+@media (max-width: 375px) {
+  body .section__projects .projects__graphic__design a .projects__graphic__design__img {
+    width: 327px;
+    height: 250px;
+  }
+}
+@media (max-width: 375px) {
+  body .section__projects .projects__graphic__design a .projects__graphic__design__img .graphic {
+    width: 327px;
+    height: 250px;
+  }
+}
+body .section__projects .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -933,7 +1002,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
       -ms-flex-align: center;
           align-items: center;
 }
-.projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
+body .section__projects .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
   width: 400px;
   text-align: center;
   font-family: "Jost", sans-serif;
@@ -946,22 +1015,54 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.projects__graphic__design a:hover img {
+@media (max-width: 375px) {
+  body .section__projects .projects__graphic__design a .projects__graphic__design__img .projects__graphic__design__text h1 {
+    width: 100%;
+    font-size: 28px;
+  }
+}
+body .section__projects .projects__graphic__design a:hover img {
   opacity: 0.5;
 }
-
-.projects__app__design {
+body .section__projects .projects__app__design {
   background-color: rgb(231, 129, 107);
   border-radius: 15px;
   width: 541px;
   height: 308px;
 }
-.projects__app__design a .projects__app__design__img {
+@media (max-width: 375px) {
+  body .section__projects .projects__app__design {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 327px;
+    height: 250px;
+  }
+}
+body .section__projects .projects__app__design a .projects__app__design__img {
   position: relative;
   width: 541px;
   height: 308px;
 }
-.projects__app__design a .projects__app__design__img .projects__app__design__text {
+@media (max-width: 375px) {
+  body .section__projects .projects__app__design a .projects__app__design__img {
+    width: 327px;
+    height: 250px;
+  }
+}
+@media (max-width: 375px) {
+  body .section__projects .projects__app__design a .projects__app__design__img .app-design-img {
+    width: 327px;
+    height: 250px;
+  }
+}
+body .section__projects .projects__app__design a .projects__app__design__img .projects__app__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -978,7 +1079,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
       -ms-flex-align: center;
           align-items: center;
 }
-.projects__app__design a .projects__app__design__img .projects__app__design__text h1 {
+body .section__projects .projects__app__design a .projects__app__design__img .projects__app__design__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -989,7 +1090,13 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.projects__app__design a .projects__app__design__img .projects__app__design__text p {
+@media (max-width: 375px) {
+  body .section__projects .projects__app__design a .projects__app__design__img .projects__app__design__text h1 {
+    width: 100%;
+    font-size: 28px;
+  }
+}
+body .section__projects .projects__app__design a .projects__app__design__img .projects__app__design__text p {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1000,17 +1107,16 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.projects__app__design a:hover img {
+body .section__projects .projects__app__design a:hover img {
   opacity: 0.5;
 }
-
-.projects__web__design {
+body .section__projects .projects__web__design {
   background-color: rgb(231, 129, 107);
   border-radius: 15px;
   width: 541px;
   height: 308px;
 }
-.projects__web__design a {
+body .section__projects .projects__web__design a {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1021,17 +1127,17 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.projects__web__design a .projects__web__design__img {
+body .section__projects .projects__web__design a .projects__web__design__img {
   position: relative;
 }
-.projects__web__design a .projects__web__design__img .web {
+body .section__projects .projects__web__design a .projects__web__design__img .web {
   width: 541px;
   height: 308px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
 }
-.projects__web__design a .projects__web__design__img .projects__web__design__text {
+body .section__projects .projects__web__design a .projects__web__design__img .projects__web__design__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1048,7 +1154,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
       -ms-flex-align: center;
           align-items: center;
 }
-.projects__web__design a .projects__web__design__img .projects__web__design__text h1 {
+body .section__projects .projects__web__design a .projects__web__design__img .projects__web__design__text h1 {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1059,7 +1165,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-.projects__web__design a:hover img {
+body .section__projects .projects__web__design a:hover img {
   opacity: 0.5;
 }
 
