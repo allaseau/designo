@@ -9,6 +9,9 @@
   margin-bottom: 160px;
   display: flex;
   align-items: center;
+  @media (max-width: 375px){
+    flex-direction: column;
+  }
   div {
     margin-left: 190px;
     margin-right: 191px;
@@ -41,6 +44,10 @@
   margin: 0 auto 192px;
   width: 1110px;
   height: 988px;
+  @media (max-width: 375px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
   .tech__div {
     width: 350px;
     height: 478px;
@@ -81,6 +88,11 @@
   border-radius: 15px;
   width:541px;
   height: 308px;
+  @media (max-width: 375px) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
   a {
     @include projectsA;
   .projects__graphic__design__img {
