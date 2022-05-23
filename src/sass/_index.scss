@@ -392,6 +392,7 @@ body {
             width: 197px;
             margin-left: 165px;
             margin-top: 144px;
+            
           }
 
           ul {
@@ -497,13 +498,13 @@ body {
 @media screen and(max-width: 375px) {
   body {
     max-width: 375px;
-    margin: auto;
-    header {
-      width: 375px;
-      margin: 35px 24px 37px;
-      nav {
-        width: 327px;
-        ul {
+    margin:auto;
+    header{
+      width:350px;
+      margin:35px 24px 37px;
+      nav{
+        
+        ul{
           display: none;
         }
       }
@@ -551,7 +552,8 @@ body {
         height: 798px;
         gap: 24px;
         text-align: center;
-        .projects__web {
+        margin-bottom: 120px;
+        .projects__web{
           height: 250px;
           a {
             .projects__web__img {
@@ -700,9 +702,14 @@ body {
               margin-left: 87px;
               margin-right: 91px;
               margin-top: 253px;
+              margin-bottom: 32px;
             }
-
-            ul {
+            .ligne{
+              margin: 0px auto;
+              width: 327px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            ul{
               flex-direction: column;
               text-align: center;
               margin: 32px auto 40px;
@@ -711,17 +718,17 @@ body {
           }
         }
 
-        hr {
-          width: 327px;
+        hr{
+          display: none ;
         }
 
         .inline__lower__container {
           flex-direction: column;
-
-          .section__info {
+          height: 280px;
+          .section__info{
             flex-direction: column;
             text-align: center;
-            margin: 40px auto;
+            margin: 0px auto 40px;
             width: 327px;
             .info__address {
               padding: 0;

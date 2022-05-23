@@ -548,11 +548,8 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
     margin: auto;
   }
   body header {
-    width: 375px;
+    width: 350px;
     margin: 35px 24px 37px;
-  }
-  body header nav {
-    width: 327px;
   }
   body header nav ul {
     display: none;
@@ -609,6 +606,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
     height: 798px;
     gap: 24px;
     text-align: center;
+    margin-bottom: 120px;
   }
   body main .section__projects .projects__web {
     height: 250px;
@@ -740,6 +738,12 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
     margin-left: 87px;
     margin-right: 91px;
     margin-top: 253px;
+    margin-bottom: 32px;
+  }
+  body footer .lower__container .footer__nav div .ligne {
+    margin: 0px auto;
+    width: 327px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   body footer .lower__container .footer__nav div ul {
     -webkit-box-orient: vertical;
@@ -751,13 +755,14 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
     gap: 32px;
   }
   body footer .lower__container hr {
-    width: 327px;
+    display: none;
   }
   body footer .lower__container .inline__lower__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 280px;
   }
   body footer .lower__container .inline__lower__container .section__info {
     -webkit-box-orient: vertical;
@@ -765,7 +770,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    margin: 40px auto;
+    margin: 0px auto 40px;
     width: 327px;
   }
   body footer .lower__container .inline__lower__container .section__info .info__address {
