@@ -19,6 +19,9 @@ body {
       color: $white;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
+      @media screen and(max-width: 375px) {
+        border-radius: 0;
+      }
 
       h1 {
         @include h1sectionT;
@@ -46,6 +49,7 @@ body {
         @media screen and(max-width: 375px) {
           height: 320px;
           width: 375px;
+          border-radius: 0;
         }
       }
     }
@@ -62,6 +66,9 @@ body {
       color: $grey;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
+      @media screen and(max-width: 375px) {
+        border-radius: 0;
+      }
       h1 {
         @include h1sectionT;
         color: $pink;
@@ -89,6 +96,7 @@ body {
         @media screen and(max-width: 375px) {
           height: 320px;
           width: 375px;
+          border-radius: 0;
         }
       }
     }
