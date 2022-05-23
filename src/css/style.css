@@ -12,18 +12,6 @@ body {
   max-height: 2940px;
   margin: auto;
 }
-@media screen and (max-width: 375px) {
-  body {
-    max-width: 375px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 body header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,30 +29,11 @@ body header img {
   -ms-flex-item-align: center;
       align-self: center;
 }
-@media screen and (max-width: 375px) {
-  body header img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 24px;
-  }
-}
-@media (max-width: 375px) {
-  body header nav {
-    width: 327px;
-    margin: 0 auto;
-  }
-}
 body header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 42px;
-}
-@media (max-width: 375px) {
-  body header nav ul {
-    display: none;
-  }
 }
 body header nav ul li {
   display: inline-block;
@@ -92,21 +61,11 @@ body main .section__rectangle {
   z-index: -1;
   margin-top: 350px;
 }
-@media (max-width: 375px) {
-  body main .section__rectangle {
-    display: none;
-  }
-}
 body main .section__rectangle__upsidedown {
   position: absolute;
   z-index: -1;
   margin-top: 1700px;
   margin-left: 440px;
-}
-@media (max-width: 375px) {
-  body main .section__rectangle__upsidedown {
-    display: none;
-  }
 }
 body main .section__services {
   background-color: rgb(231, 129, 107);
@@ -127,12 +86,6 @@ body main .section__services {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-@media (max-width: 375px) {
-  body main .section__services {
-    width: 375px;
-    height: 843px;
-  }
 }
 body main .section__services article {
   position: relative;
@@ -202,12 +155,6 @@ body main .section__projects {
   gap: 24px 30px;
   margin: 0 auto 160px;
   width: 1111px;
-}
-@media (max-width: 375px) {
-  body main .section__projects {
-    width: 327px;
-    grid-template-areas: "a" "b" "c";
-  }
 }
 body main .section__projects .projects__web {
   grid-area: a;
@@ -387,18 +334,6 @@ body main .section__values {
   color: rgb(51, 49, 54);
   width: 1110px;
 }
-@media (max-width: 375px) {
-  body main .section__values {
-    width: 327px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 body main .section__values .values__passion, body main .section__values .values__friendly, body main .section__values .values__resourceful {
   font-size: small;
   text-align: center;
@@ -429,12 +364,6 @@ body footer {
   z-index: auto;
   height: 393px;
 }
-@media screen and (max-width: 375px) {
-  body footer {
-    width: 375px;
-    height: 1005px;
-  }
-}
 body footer .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,12 +382,6 @@ body footer .section__contact {
   margin: 0 auto -101px;
   position: relative;
   z-index: 1;
-}
-@media screen and (max-width: 375px) {
-  body footer .section__contact {
-    width: 327px;
-    height: 379px;
-  }
 }
 body footer .section__contact div {
   margin-left: 95px;
@@ -594,7 +517,7 @@ body footer .lower__container .inline__lower__container .section__info .info__ad
 body footer .lower__container .inline__lower__container .section__info .info__address p {
   font-weight: 400;
 }
-body footer .lower__container .inline__lower__container .section__info .section__contact {
+body footer .lower__container .inline__lower__container .section__info .section__info {
   width: 350px;
   height: 78px;
 }
@@ -619,6 +542,240 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   cursor: pointer;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+    margin: auto;
+  }
+  body header {
+    width: 375px;
+    margin: 35px 24px 37px;
+  }
+  body header nav {
+    width: 327px;
+  }
+  body header nav ul {
+    display: none;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body main .section__rectangle {
+    display: none;
+  }
+  body main .section__rectangle__upsidedown {
+    display: none;
+  }
+  body main .section__services {
+    width: 375px;
+    height: 843px;
+    margin: 0 auto 120px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body main .section__services article div {
+    width: 327px;
+    margin: 80px 24px;
+    text-align: center;
+  }
+  body main .section__services article div h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  body main .section__services article div p {
+    width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  body main .section__services .services__img {
+    display: none;
+  }
+  body main .section__projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 327px;
+    height: 798px;
+    gap: 24px;
+    text-align: center;
+  }
+  body main .section__projects .projects__web {
+    height: 250px;
+  }
+  body main .section__projects .projects__web a .projects__web__img img {
+    width: 327px;
+    height: 250px;
+  }
+  body main .section__projects .projects__web a .projects__web__img .projects__web__text h1 {
+    width: 215px;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+  }
+  body main .section__projects .projects__web a .projects__web__img .projects__web__text p img {
+    width: 4px;
+    height: 8px;
+  }
+  body main .section__projects .projects__app {
+    height: 250px;
+  }
+  body main .section__projects .projects__app a .projects__app__img {
+    width: 327px;
+    height: 250px;
+    text-align: center;
+  }
+  body main .section__projects .projects__app a .projects__app__img img {
+    width: 327px;
+    height: 250px;
+  }
+  body main .section__projects .projects__app a .projects__app__img .projects__app__text h1 {
+    width: 215px;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+  }
+  body main .section__projects .projects__app a .projects__app__img .projects__app__text p img {
+    width: 4px;
+    height: 8px;
+  }
+  body main .section__projects .projects__graphic {
+    height: 250px;
+    margin-bottom: 120px;
+  }
+  body main .section__projects .projects__graphic a .projects__graphic__img {
+    width: 327px;
+    height: 250px;
+    text-align: center;
+  }
+  body main .section__projects .projects__graphic a .projects__graphic__img img {
+    width: 327px;
+    height: 250px;
+  }
+  body main .section__projects .projects__graphic a .projects__graphic__img .projects__graphic__text h1 {
+    width: 255px;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+  }
+  body main .section__projects .projects__graphic a .projects__graphic__img .projects__graphic__text p img {
+    width: 4px;
+    height: 8px;
+  }
+  body main .section__values {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 327px;
+    height: 1396px;
+    margin: 0 24px 80px;
+  }
+  body main .section__values .values__passion p, body main .section__values .values__resourceful p, body main .section__values .values__friendly p {
+    width: 327px;
+    height: 104px;
+    text-align: none;
+  }
+  body footer {
+    margin-top: 41px;
+    height: 1005px;
+  }
+  body footer .section__contact {
+    width: 327px;
+    height: 379px;
+    margin: 0 auto -190px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background-size: 327px 379px;
+    border-radius: 15px;
+  }
+  body footer .section__contact div {
+    margin: 0;
+  }
+  body footer .section__contact h1 {
+    width: 279px;
+    height: 82px;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 64px;
+  }
+  body footer .section__contact p {
+    margin-top: 6px;
+    width: 279px;
+    height: 75px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 32px;
+  }
+  body footer a {
+    margin: 0 auto;
+  }
+  body footer .lower__container {
+    height: 815px;
+  }
+  body footer .lower__container .footer__nav div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer .lower__container .footer__nav div .footer__nav__img {
+    margin-left: 87px;
+    margin-right: 91px;
+    margin-top: 253px;
+  }
+  body footer .lower__container .footer__nav div ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: 32px auto 40px;
+    gap: 32px;
+  }
+  body footer .lower__container hr {
+    width: 327px;
+  }
+  body footer .lower__container .inline__lower__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer .lower__container .inline__lower__container .section__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: 40px auto;
+    width: 327px;
+  }
+  body footer .lower__container .inline__lower__container .section__info .info__address {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  body footer .lower__container .inline__lower__container .section__media {
+    margin: 0 95px 64px;
+  }
+}
 .section__solutions__design {
   color: rgb(255, 255, 255);
   width: 1111px;
