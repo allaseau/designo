@@ -1,148 +1,174 @@
-.section__form {
-  display: flex;
-  background-color: $pink;
-  background-image: url("../img/rond.png");
-  background-repeat: no-repeat;
-  background-size: 660px 520px;
-  border-radius: 20px;
-  color: $white;
-  width: 1111px;
-  height: 480px;
-  align-items: center;
-  padding: 20px;
-  margin: 0 auto 160px;
-  div {
-    h2 {
-      width: 540px;
-      height: 48px;
-      padding-left: 95px;
-      padding-bottom: 32px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 48px;
-      line-height: 48px;
-      margin-top: 135px;
+body {
+  height: 1640px;
+  .section__form {
+    display: flex;
+    background-color: $pink;
+    background-image: url("../img/rond.png");
+    background-repeat: no-repeat;
+    background-size: 660px 520px;
+    border-radius: 20px;
+    color: $white;
+    width: 1111px;
+    height: 480px;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto 160px;
+    div {
+      h2 {
+        width: 540px;
+        height: 48px;
+        margin-left: 95px;
+        margin-bottom: 32px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+        margin-top: 135px;
+      }
+      p {
+        width: 445px;
+        height: 104px;
+        margin-bottom: 161px;
+        margin-left: 95px;
+        margin-right: 100px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+      }
     }
-    p {
-      width: 445px;
-      height: 104px;
-      margin-bottom: 161px;
-      margin-left: 95px;
-      margin-right: 100px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-    }
-  }
 
-  form {
-    label {
-      opacity: 0.5;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 26px;
-    }
-    label:hover{
-      opacity: 1;
+    form {
+      label {
+        opacity: 0.5;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 26px;
+      }
     }
   }
-}
-input {
-  width: 380px;
-  margin-bottom: 25px;
-  border: none;
-  border-bottom: 1px solid $white;
-  background-color: rgba(255, 255, 255, 0);
-  &:focus {
-    outline: none;
+  input {
+    width: 380px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid $white;
+    background-color: rgba(255, 255, 255, 0);
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $white;
+    }
+    color: $white;
   }
-  color: $white;
-}
-textarea {
-  width: 380px;
-  border: none;
-  border-bottom: 1px solid $white;
-  background-color: rgba(255, 255, 255, 0);
-  resize: none;
-  &:focus {
-    outline: none;
+  textarea {
+    width: 380px;
+    border: none;
+    border-bottom: 1px solid $white;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $white;
+    }
+    color: $white;
   }
-  color: $white;
-}
-button {
-  padding: 17px 47px 17px 48px;
-  margin-left: 228px;
-  margin-right: 96px;
-  margin-top: 24px;
-  background-color: $white;
-  border-radius: 8px;
-  border: none;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-button:hover {
-  background-color: $peach;
-  color: $white;
-  cursor: pointer;
-}
-.footer__contact {
-  height: 321px;
+  button {
+    padding: 17px 47px 17px 48px;
+    margin-left: 228px;
+    margin-right: 96px;
+    margin-top: 24px;
+    background-color: $white;
+    border-radius: 8px;
+    border: none;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  button:hover {
+    background-color: $peach;
+    color: $white;
+    cursor: pointer;
+  }
+  .footer__contact {
+    height: 321px;
+  }
 }
 @media (max-width: 375px) {
-  body{
-    height: 1732px;
-    .section__form{
+  body {
+    height: 2914px;
+
+    .section__form {
       display: flex;
       flex-direction: column;
       width: 375px;
-      height: 764px;
+      height: 794px;
       border-radius: 0px;
       padding: 0;
-      margin-bottom: 192px;
-      div{
-        text-align: center;
-      }
-      h2{
+      margin-bottom: 120px;
+      background-image: url("../img/rondS.png");
+      background-repeat: repeat-x;
+      background-size: 292px;
+      background-position: 250% 0%;
+      div {
         width: 327px;
-        height: 36px;
-        margin-top: 72px;
+        h2 {
+          width: 327px;
+          height: 36px;
+          margin-top: 72px;
+          margin-left: 0;
+          font-family: $fontJ;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 36px;
+          text-align: center;
+        }
+        p {
+          width: 327px;
+          height: 125px;
+          margin-left: 0;
+          margin-bottom: 48px;
+          font-family: $fontJ;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          text-align: center;
+        }
       }
-      p{
+      form {
         width: 327px;
-        height: 125px; 
-        margin-bottom: 60px;
-      }
-      form{
-        width: 327px;
-        height: 338px; 
-        input{
+        height: 338px;
+
+        input {
           width: 327px;
         }
-        textarea{
+        textarea {
           width: 327px;
         }
-        button{
+        button {
           width: 152px;
           height: 56px;
-          margin: 24px 0px 0px 0px;
-          
+          margin: 24px 63px 72px 95px;
         }
       }
     }
-    .section__location{
+    .section__location {
       display: flex;
       flex-direction: column;
       width: 375px;
-      height: 1188px;
+      height: 1200px;
+      margin-bottom: 120px;
+      img {
+        margin-bottom: 48px;
+      }
+      h2 {
+        margin-bottom: 32px;
+      }
     }
   }
-  
-  }
-  
+}

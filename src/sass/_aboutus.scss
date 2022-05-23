@@ -1,7 +1,16 @@
 body {
   width: 1440px;
+  @media screen and(max-width: 375px) {
+    width: 375px;
+    height: 8000px;
+  }
   .section__aboutUs {
     @include containerA;
+    @media screen and(max-width:375px) {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 375px;
+    }
     div {
       background-color: $pink;
       background-image: url("../img/rond.png");
@@ -10,22 +19,44 @@ body {
       color: $white;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
+
       h1 {
         @include h1sectionT;
+        @media screen and(max-width:375px) {
+          width: 327px;
+          height: 36px;
+          text-align: center;
+          margin-left: 24px;
+        }
       }
       p {
         @include psectionT;
+        @media screen and(max-width:375px) {
+          width: 327px;
+          height: 175px;
+          text-align: center;
+          margin-left: 24px;
+        }
       }
-      .solutions__img {
+      .section__aboutUs__img {
         width: 476px;
         height: 480px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+        @media screen and(max-width: 375px) {
+          height: 320px;
+          width: 375px;
+        }
       }
     }
   }
   .section__skills {
     @include containerB;
+    @media screen and(max-width:375px) {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 375px;
+    }
     div {
       background-color: $pinkBg;
       color: $grey;
@@ -34,15 +65,31 @@ body {
       h1 {
         @include h1sectionT;
         color: $pink;
+        @media screen and(max-width:375px) {
+          width: 327px;
+          height: 36px;
+          text-align: center;
+          margin-left: 24px;
+        }
       }
       p {
         @include psectionT;
+        @media screen and(max-width:375px) {
+          width: 327px;
+          height: 325px;
+          text-align: center;
+          margin-left: 24px;
+        }
       }
-      .solutions__img {
+      .section__skills__img {
         width: 476px;
         height: 640px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        @media screen and(max-width: 375px) {
+          height: 320px;
+          width: 375px;
+        }
       }
     }
   }
@@ -98,6 +145,12 @@ body {
   }
   .section__solutions {
     @include containerB;
+    @media screen and(max-width:375px) {
+      display: flex;
+      flex-direction: column-reverse;
+
+      width: 375px;
+    }
     div {
       background-color: $pinkBg;
       color: $grey;
@@ -106,15 +159,31 @@ body {
       h1 {
         @include h1sectionT;
         color: $pink;
+        @media screen and(max-width:375px) {
+          width: 327px;
+          height: 36px;
+          text-align: center;
+          margin-left: 24px;
+        }
       }
       p {
         @include psectionT;
+        @media screen and(max-width:375px) {
+          width: 327px;
+          height: 300px;
+          text-align: center;
+          margin-left: 24px;
+        }
       }
       .solutions__img {
         width: 476px;
         height: 640px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+        @media screen and(max-width: 375px) {
+          height: 320px;
+          width: 375px;
+        }
       }
     }
   }

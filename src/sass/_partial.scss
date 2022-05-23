@@ -140,6 +140,9 @@ $fontJ: "Jost", sans-serif;
   display: flex;
   gap: 30px;
   margin-left: 95px;
+  @media screen and(max-width: 375px) {
+    margin-left: 0;
+  }
 }
 
 @mixin lowcontainerHTD {
