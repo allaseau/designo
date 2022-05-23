@@ -54,9 +54,11 @@ body header nav ul li a:hover {
           text-decoration-color: rgb(51, 49, 54);
 }
 body main .section__services {
-  background-image: url("../img/fond 1.png");
+  background-color: rgb(231, 129, 107);
+  background-image: url("../img/rond2.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 515px;
+  background-size: 595px 635px;
   height: 640px;
   width: 1111px;
   margin: 0 auto 160px;
