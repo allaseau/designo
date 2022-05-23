@@ -30,7 +30,7 @@ body {
       flex-direction: column;
       background-image: none;
       background-color: $pink;
-      margin: 0;
+      margin: 0 auto 96px;
       width: 375px;
       br {
         display: none;
@@ -106,6 +106,17 @@ body {
       text-align: center;
       background-color: $pinkBg;
       border-radius: 15px;
+      @media screen and(max-width: 375px) {
+        margin: 0 24px 32px 24px;
+        width: 327px;
+        height: 478px;
+      }
+      @media screen and(max-width: 375px) {
+        img {
+          width: 327px;
+        }
+      }
+
       h2 {
         margin-top: 30px;
         margin-bottom: 16px;
@@ -115,6 +126,9 @@ body {
         font-weight: 500;
         font-size: 20px;
         line-height: 26px;
+        @media screen and(max-width: 375px) {
+          width: 327px;
+        }
       }
       p {
         margin: 0 auto;
@@ -124,6 +138,7 @@ body {
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
+        text-align: center;
       }
     }
     .tech__div:hover {
@@ -139,8 +154,8 @@ body {
     @media screen and(max-width:375px) {
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr !important;
-      height: 524px;
-      margin: 0 auto 96px;
+      height: 524px !important;
+      margin: 0 auto 96px !important;
     }
 
     .projects__graphic__design {
@@ -179,14 +194,28 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             @include projectsT;
+            @media screen and(max-width: 375px) {
+              width: 327px;
+            }
 
             h1 {
               width: 400px;
               text-align: center;
               @include projectsH;
               @media (max-width: 375px) {
-                width: 100%;
+                width: 300px;
+                font-family: $fontJ;
+                font-style: normal;
+                font-weight: 500;
                 font-size: 28px;
+                line-height: 36px;
+                text-align: center;
+                letter-spacing: 1.4px;
+              }
+            }
+            p {
+              @include projectsA;
+              @media screen and(max-width: 375px) {
               }
             }
           }
@@ -237,8 +266,14 @@ body {
             h1 {
               @include projectsH;
               @media (max-width: 375px) {
-                width: 100%;
+                width: 215px;
+                font-family: $fontJ;
+                font-style: normal;
+                font-weight: 500;
                 font-size: 28px;
+                line-height: 36px;
+                text-align: center;
+                letter-spacing: 1.4px;
               }
             }
             p {
@@ -278,6 +313,9 @@ body {
             h1 {
               @include projectsH;
             }
+            p {
+              @include projectsA;
+            }
           }
         }
       }
@@ -285,39 +323,6 @@ body {
         img {
           opacity: 0.5;
         }
-      }
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-    header {
-      nav {
-        display: none;
-      }
-    }
-
-    main {
-      .section__solutions__design {
-        h2 {
-          align-items: center;
-        }
-      }
-
-      .section__tech {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-      }
-      .section__projects {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
       }
     }
   }
