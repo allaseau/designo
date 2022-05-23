@@ -776,10 +776,19 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
     margin: 0 95px 64px;
   }
 }
+body {
+  height: 5301px;
+}
 @media screen and (max-width: 375px) {
   body header {
     margin: auto;
     width: 375px;
+    height: 96px;
+  }
+  body header img {
+    margin-top: 35px;
+    margin-bottom: 34px;
+    margin-left: 24px;
   }
   body header nav {
     display: none;
