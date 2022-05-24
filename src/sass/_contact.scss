@@ -1,5 +1,5 @@
 body {
-  height: 1640px;
+  max-height: 1640px;
   .section__form {
     display: flex;
     background-color: $pink;
@@ -99,7 +99,7 @@ body {
 }
 @media (max-width: 375px) {
   body {
-    height: 2914px;
+    max-height: 5301px;
 
     .section__form {
       display: flex;
