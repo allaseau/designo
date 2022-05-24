@@ -1,5 +1,5 @@
 body {
-  height: 5301px;
+  max-height: 5301px;
   header {
     @media screen and(max-width: 375px) {
       margin: auto;
@@ -155,8 +155,8 @@ body {
     @media screen and(max-width:375px) {
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr !important;
-      height: 524px !important;
-      margin: 0 auto 96px !important;
+      max-height: 798px ;
+      margin: 0 auto 96px;
     }
 
     .projects__graphic__design {
