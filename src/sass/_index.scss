@@ -498,8 +498,10 @@ body {
 @media screen and(max-width: 375px) {
   body {
     max-width: 375px;
+    height:auto;
     margin:auto;
     header{
+      height: 96px;
       width:350px;
       margin:35px 24px 37px;
       nav{
@@ -724,7 +726,7 @@ body {
 
         .inline__lower__container {
           flex-direction: column;
-          height: 280px;
+          height: 291px;
           .section__info{
             flex-direction: column;
             text-align: center;

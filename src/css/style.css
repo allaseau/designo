@@ -1286,7 +1286,7 @@ body {
 @media screen and (max-width: 375px) {
   body {
     width: 375px;
-    height: 8000px;
+    height: 5094px;
   }
 }
 body .section__aboutUs {
@@ -1307,6 +1307,7 @@ body .section__aboutUs {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     width: 375px;
+    height: 715px;
   }
 }
 body .section__aboutUs div {
@@ -1317,6 +1318,12 @@ body .section__aboutUs div {
   color: rgb(255, 255, 255);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+@media screen and (max-width: 375px) {
+  body .section__aboutUs div {
+    border-radius: 0;
+    height: 395px;
+  }
 }
 body .section__aboutUs div h1 {
   font-family: "Jost", sans-serif;
@@ -1336,6 +1343,7 @@ body .section__aboutUs div h1 {
     height: 36px;
     text-align: center;
     margin-left: 24px;
+    margin-top: 80px;
   }
 }
 body .section__aboutUs div p {
@@ -1381,10 +1389,14 @@ body .section__skills {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 375px;
+    height: 865px;
   }
 }
 body .section__skills div {
@@ -1392,6 +1404,12 @@ body .section__skills div {
   color: rgb(51, 49, 54);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+@media screen and (max-width: 375px) {
+  body .section__skills div {
+    border-radius: 0;
+    height: 545px;
+  }
 }
 body .section__skills div h1 {
   font-family: "Jost", sans-serif;
@@ -1412,6 +1430,8 @@ body .section__skills div h1 {
     height: 36px;
     text-align: center;
     margin-left: 24px;
+    margin-top: 80px;
+    margin-bottom: 24px;
   }
 }
 body .section__skills div p {
@@ -1441,6 +1461,7 @@ body .section__skills div .section__skills__img {
   body .section__skills div .section__skills__img {
     height: 320px;
     width: 375px;
+    border-radius: 0;
   }
 }
 body .section__location {
@@ -1464,6 +1485,12 @@ body .section__location {
   color: rgb(51, 49, 54);
   width: 1110px;
   text-align: center;
+}
+@media screen and (max-width: 375px) {
+  body .section__location {
+    height: 1188px;
+    width: 350px;
+  }
 }
 body .section__location img {
   margin: 0 auto 48px;
@@ -1520,6 +1547,10 @@ body .section__solutions {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 865px;
     width: 375px;
   }
 }
@@ -1528,6 +1559,11 @@ body .section__solutions div {
   color: rgb(51, 49, 54);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+@media screen and (max-width: 375px) {
+  body .section__solutions div {
+    height: 545px;
+  }
 }
 body .section__solutions div h1 {
   font-family: "Jost", sans-serif;
@@ -1548,6 +1584,8 @@ body .section__solutions div h1 {
     height: 36px;
     text-align: center;
     margin-left: 24px;
+    margin-top: 80px;
+    margin-bottom: 24px;
   }
 }
 body .section__solutions div p {
