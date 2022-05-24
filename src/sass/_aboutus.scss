@@ -11,6 +11,7 @@ body {
       flex-direction: column-reverse;
       width: 375px;
       height: 715px;
+      margin-bottom: 0;
     }
     div {
       background-color: $pink;
@@ -22,7 +23,11 @@ body {
       border-bottom-left-radius: 20px;
       @media screen and(max-width: 375px) {
         border-radius: 0;
-        height: 395px;
+        height: 360px;
+        background-size: 300px 240px;
+        background-position-x: right;
+        background-position-y: -70%;
+        margin-bottom: 0;
       }
 
       h1 {
@@ -42,6 +47,12 @@ body {
           height: 175px;
           text-align: center;
           margin-left: 24px;
+          font-family: $fontJ;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 80px;
         }
       }
       .section__aboutUs__img {
@@ -52,6 +63,7 @@ body {
         @media screen and(max-width: 375px) {
           height: 320px;
           width: 375px;
+          border-radius: 0;
         }
       }
     }
@@ -93,6 +105,11 @@ body {
           height: 325px;
           text-align: center;
           margin-left: 24px;
+          font-family: $fontJ;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
         }
       }
       .section__skills__img {
@@ -198,6 +215,11 @@ body {
           height: 300px;
           text-align: center;
           margin-left: 24px;
+          font-family: $fontJ;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
         }
       }
       .solutions__img {
