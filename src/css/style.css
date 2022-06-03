@@ -545,9 +545,11 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
 @media screen and (max-width: 375px) {
   body {
     max-width: 375px;
+    height: auto;
     margin: auto;
   }
   body header {
+    height: 96px;
     width: 350px;
     margin: 35px 24px 37px;
   }
@@ -762,7 +764,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 280px;
+    height: 291px;
   }
   body footer .lower__container .inline__lower__container .section__info {
     -webkit-box-orient: vertical;
@@ -782,7 +784,7 @@ body footer .lower__container .inline__lower__container .section__media ul li i:
   }
 }
 body {
-  height: 5301px;
+  max-height: 5301px;
 }
 @media screen and (max-width: 375px) {
   body header {
@@ -965,8 +967,8 @@ body .section__tech .tech__div:hover h2 {
   body .section__projects {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr !important;
-    height: 524px !important;
-    margin: 0 auto 96px !important;
+    max-height: 798px;
+    margin: 0 auto 96px;
   }
 }
 body .section__projects .projects__graphic__design {
@@ -1308,6 +1310,7 @@ body .section__aboutUs {
             flex-direction: column-reverse;
     width: 375px;
     height: 715px;
+    margin-bottom: 0;
   }
 }
 body .section__aboutUs div {
@@ -1322,7 +1325,11 @@ body .section__aboutUs div {
 @media screen and (max-width: 375px) {
   body .section__aboutUs div {
     border-radius: 0;
-    height: 395px;
+    height: 360px;
+    background-size: 300px 240px;
+    background-position-x: right;
+    background-position-y: -70%;
+    margin-bottom: 0;
   }
 }
 body .section__aboutUs div h1 {
@@ -1361,6 +1368,12 @@ body .section__aboutUs div p {
     height: 175px;
     text-align: center;
     margin-left: 24px;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 80px;
   }
 }
 body .section__aboutUs div .section__aboutUs__img {
@@ -1373,6 +1386,7 @@ body .section__aboutUs div .section__aboutUs__img {
   body .section__aboutUs div .section__aboutUs__img {
     height: 320px;
     width: 375px;
+    border-radius: 0;
   }
 }
 body .section__skills {
@@ -1449,6 +1463,11 @@ body .section__skills div p {
     height: 325px;
     text-align: center;
     margin-left: 24px;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 body .section__skills div .section__skills__img {
@@ -1603,6 +1622,11 @@ body .section__solutions div p {
     height: 300px;
     text-align: center;
     margin-left: 24px;
+    font-family: "Jost", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 body .section__solutions div .solutions__img {
@@ -1961,7 +1985,7 @@ body .section__location__uk .box img {
   }
 }
 body {
-  height: 1640px;
+  max-height: 1640px;
 }
 body .section__form {
   display: -webkit-box;
@@ -2061,7 +2085,7 @@ body .footer__contact {
 
 @media (max-width: 375px) {
   body {
-    height: 2914px;
+    max-height: 5301px;
   }
   body .section__form {
     display: -webkit-box;
